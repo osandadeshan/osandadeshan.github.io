@@ -5,9 +5,13 @@
 Osanda Nimalarathna
 
 Website: https://osandadeshan.github.io/
+
 Twitter: https://twitter.com/osandadeshan/
+
 Facebook: https://www.facebook.com/osanda.nimalarathna/
+
 Linkedin: https://www.linkedin.com/in/osandadeshan/
+
 Medium: https://medium.com/@osanda.deshan/
 
 
