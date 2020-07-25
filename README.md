@@ -1,7 +1,7 @@
 
 ### Osanda Nimalarathna | Portfolio
 
-AUTHOR:
+**AUTHOR:**
 Osanda Nimalarathna
 
 Website: https://osandadeshan.github.io/
@@ -11,7 +11,7 @@ Linkedin: https://www.linkedin.com/in/osandadeshan/
 Medium: https://medium.com/@osanda.deshan/
 
 
-CREDITS:
+**CREDITS:**
 
 Bootstrap
 http://getbootstrap.com/
