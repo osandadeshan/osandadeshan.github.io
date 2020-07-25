@@ -1,6 +1,6 @@
 
 TITLE: 
-Profile - Osanda Nimalarathna | Portfolio
+**Osanda Nimalarathna | Portfolio**
 
 AUTHOR:
 Osanda Nimalarathna
