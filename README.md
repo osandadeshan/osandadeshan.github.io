@@ -1,6 +1,8 @@
 
 ### Osanda Nimalarathna | Portfolio
 
+<br />
+
 **AUTHOR:**
 Osanda Nimalarathna
 
