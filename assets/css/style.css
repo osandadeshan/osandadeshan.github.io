@@ -135,7 +135,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 992px) {
   #header .logo {
-    font-size: 28px;
+    font-size: 24px;
+    width: 222px;
+    overflow: hidden;
   }
 }
 
