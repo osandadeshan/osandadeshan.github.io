@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 992px) {
   #header .logo {
     font-size: 20px;
-    width: 222px;
+    width: 300px;
     overflow: hidden;
   }
 }
@@ -274,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
-  top: 2px;
+  top: 0;
   z-index: 9998;
   border: 0;
   background: none;
