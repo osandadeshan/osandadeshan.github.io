@@ -109,8 +109,6 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #header {
   background: #34b7a7;
-  /* background: rgb(1 29 25 / 50%); */
-  /* background-image: linear-gradient( rgb(52 183 167)-30%,rgb(2 60 53)100%); */
   box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.08);
   z-index: 997;
   height: relative;
@@ -129,7 +127,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo a {
-  /* color: #222222; */
   color: #ececec;
 }
 
@@ -194,7 +191,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  /* color: #222222; */
   color: #fff;
 }
 
@@ -390,7 +386,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-social-links a {
-  /* color: #222222; */
   color: #ececec;
   padding-left: 6px;
   display: inline-block;
@@ -416,7 +411,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(to right, rgb(0 0 0 / 71%), rgb(52 183 167 / 41%)), url(../img/background.jpg);
-  /* background: url("../img/background.jpg") top right; */
   background-size: cover;
 
 }
@@ -433,10 +427,8 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     width: 100%;
     height: 100vh;
-    /* background-image: linear-gradient(to right, rgb(0 0 0 / 71%), rgb(52 183 167 / 41%)), url(../img/background.jpg); */
     background: url("../img/background-mobile.jpg") top right;
     background-size: cover;
-  
   }
   #hero h6 {
     width: 100% !important;
@@ -448,18 +440,15 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  /* color: #222222; */
   color: #ececec;
 }
 
 #hero h2 {
-  /* color: #6f6f6f; */
   color: #ececec;
   margin: 10px 0 0 0;
   font-size: 22px;
 }
 #hero h5 {
-  /* color: #6f6f6f; */
   color: #ececec;
   margin: 10px 0 0 0;
   font-size: 16px;
