@@ -165,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #222222;
+  color: #ececec;
   transition: 0.3s;
   font-size: 15px;
   font-family: "Raleway", sans-serif;
@@ -191,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #fff;
+  color: #222222;
 }
 
 .nav-menu .drop-down ul {
