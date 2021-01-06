@@ -517,6 +517,7 @@ h1, h2, h3, h4, h5, h6 {
     content: "";
     background: linear-gradient(to right, rgb(0 0 0 / 71%), rgb(52 183 167 / 41%));
     position: absolute;
+    height: 100vh;
     bottom: 0;
     top: 0;
     left: 0;
@@ -538,9 +539,9 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-/* section {
+section {
   padding: 60px 0;
-} */
+}
 
 .section-bg {
   background-color: #e7f8f6;
