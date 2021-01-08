@@ -119,10 +119,11 @@
 
   // Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
+    autoplay: 5000,
     dots: true,
     loop: true,
-    items: 1
+    items: 1,
+    autoplayHoverPause: true
   });
 
   // Porfolio isotope and filter

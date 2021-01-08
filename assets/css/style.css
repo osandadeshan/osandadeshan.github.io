@@ -1077,7 +1077,7 @@ section {
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
   margin: 0 5px 0 0;
-  font-size: 28px;
+  font-size: 22px;
   display: inline-block;
   transition: 0.3s;
 }
@@ -1103,6 +1103,10 @@ section {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding: 0;
+}
+
+.vbox-figlio {
+  width: 85%;
 }
 
 .portfolio-details .portfolio-title {
