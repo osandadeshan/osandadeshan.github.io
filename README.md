@@ -5,7 +5,7 @@
 * Twitter: https://twitter.com/osandadeshan
 * Facebook: https://www.facebook.com/osanda.nimalarathna
 * Linkedin: https://www.linkedin.com/in/osandadeshan
-* Medium: https://medium.com/@osanda.deshan
+* Medium: https://osandadeshan.medium.com
 * StackOverflow: https://stackoverflow.com/users/6397151/osanda-deshan
 
 #### Credits
