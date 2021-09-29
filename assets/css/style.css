@@ -445,12 +445,14 @@ h6 {
 }
 
 #hero .container {
+    margin-left: 38px;
     padding-top: 70px;
     position: relative;
 }
 
 @media (max-width: 992px) {
-    #hero .container {
+    #hero .container { 
+        margin-left: 0;
         padding-top: 85%;
     }
     #hero {
