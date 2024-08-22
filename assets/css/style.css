@@ -69,6 +69,7 @@ h6 {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -78,6 +79,7 @@ h6 {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -285,9 +287,11 @@ h6 {
     .nav-menu .drop-down .drop-down ul {
         left: -90%;
     }
+
     .nav-menu .drop-down .drop-down:hover>ul {
         left: -100%;
     }
+
     .nav-menu .drop-down .drop-down>a:after {
         content: "\ea9d";
     }
@@ -451,19 +455,22 @@ h6 {
 }
 
 @media (max-width: 992px) {
-    #hero .container { 
+    #hero .container {
         margin-left: 0;
         padding-top: 85%;
     }
+
     #hero {
         width: 100%;
         height: 100vh;
         background: url("../img/background-mobile.jpg") top right;
         background-size: cover;
     }
+
     #hero h6 {
         width: 100% !important;
     }
+
     #hero h5 {
         width: 100% !important;
     }
@@ -578,14 +585,17 @@ h6 {
         left: 0;
         right: 0;
     }
+
     #hero h1 {
         font-size: 28px;
         line-height: 36px;
     }
+
     #hero h2 {
         font-size: 18px;
         line-height: 24px;
     }
+
     #hero h2 .job {
         font-size: 16px;
     }
@@ -765,47 +775,47 @@ section {
 }
 
 .facts .count-box {
-padding: 30px;
-width: 100%;
+    padding: 30px;
+    width: 100%;
 }
 
 .facts .count-box i {
-display: block;
-font-size: 44px;
-color: #34b7a7;
-float: left;
-line-height: 0;
+    display: block;
+    font-size: 44px;
+    color: #34b7a7;
+    float: left;
+    line-height: 0;
 }
 
 .facts .count-box span {
-font-size: 48px;
-line-height: 40px;
-display: block;
-font-weight: 700;
-color: #050d18;
-margin-left: 60px;
+    font-size: 48px;
+    line-height: 40px;
+    display: block;
+    font-weight: 700;
+    color: #050d18;
+    margin-left: 60px;
 }
 
 .facts .count-box p {
-padding: 15px 0 0 0;
-margin: 0 0 0 60px;
-font-family: "Raleway", sans-serif;
-font-size: 14px;
-color: #122f57;
+    padding: 15px 0 0 0;
+    margin: 0 0 0 60px;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    color: #122f57;
 }
 
 .facts .count-box a {
-font-weight: 600;
-display: block;
-margin-top: 20px;
-color: #122f57;
-font-size: 15px;
-font-family: "Poppins", sans-serif;
-transition: ease-in-out 0.3s;
+    font-weight: 600;
+    display: block;
+    margin-top: 20px;
+    color: #122f57;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    transition: ease-in-out 0.3s;
 }
 
 .facts .count-box a:hover {
-color: #3dc8b7;
+    color: #3dc8b7;
 }
 
 
@@ -926,6 +936,22 @@ color: #3dc8b7;
     display: inline-block;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #34b7a7;
+}
+
+.resume .resume-item h6 {
+    font-size: 16px;
+    text-decoration: underline overline;
+    display: inline-block;
+    font-weight: 800;
+    color: #34b7a7;
+}
+
+.resume .resume-item h7 {
+    font-size: 16px;
+    font-style: italic;
+    display: inline-block;
+    font-weight: 600;
     color: #34b7a7;
 }
 
@@ -1451,6 +1477,7 @@ color: #3dc8b7;
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -1460,6 +1487,7 @@ color: #3dc8b7;
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
