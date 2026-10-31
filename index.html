@@ -1,125 +1,505 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Osanda Nimalarathna | Lead Software Engineer &amp; RPA Solution Architect</title>
+  <meta name="description" content="Osanda Nimalarathna — Lead Software Engineer at GovTech Singapore with 10+ years in test automation, quality engineering and RPA. Creator of open-source testing tools including IntelliAPI.">
+  <meta name="theme-color" content="#07080F">
+  <link rel="canonical" href="https://osandadeshan.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Osanda Nimalarathna | Lead Software Engineer &amp; RPA Solution Architect">
+  <meta property="og:description" content="Osanda Nimalarathna — Lead Software Engineer at GovTech Singapore with 10+ years in test automation, quality engineering and RPA. Creator of open-source testing tools including IntelliAPI.">
+  <meta property="og:url" content="https://osandadeshan.github.io/">
+  <meta property="og:image" content="https://osandadeshan.github.io/assets/img/profile.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://osandadeshan.github.io/assets/img/profile.jpg">
+  <meta property="og:image:alt" content="Portrait of Osanda Nimalarathna">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <title>Osanda Nimalarathna</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+  <!-- Apply saved theme before first paint (default: dark) -->
+  <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') === 'light' ? 'light' : 'dark'); document.documentElement.classList.add('js');</script>
 
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
-
-    <style>
-        .nav-menu a {
-            color: #9cd9d1 !important;
-        }
-    </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/site.css" rel="stylesheet">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Osanda Nimalarathna", "jobTitle": "Lead Software Engineer", "url": "https://osandadeshan.github.io/", "image": "https://osandadeshan.github.io/assets/img/profile.jpg", "email": "mailto:osanda.deshan@gmail.com", "worksFor": {"@type": "Organization", "name": "Government Technology Agency (GovTech) Singapore"}, "alumniOf": "Uva Wellassa University", "sameAs": ["https://www.linkedin.com/in/osandadeshan", "https://github.com/osandadeshan", "https://osandadeshan.medium.com", "https://stackoverflow.com/users/6397151/osanda-deshan", "https://twitter.com/osandadeshan", "https://www.facebook.com/osanda.nimalarathna", "https://www.instagram.com/osanda.deshan"]}</script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div id="progress" aria-hidden="true"></div>
 
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top" style="background: rgb(1 29 25 / 50%);">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
+  <nav class="topbar" id="topbar" aria-label="Primary">
+    <a href="#home" class="logo"><span class="logo-mark">ON</span>Osanda</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#credentials">Credentials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch colour theme">
+        <i class="bi bi-moon-stars-fill i-moon"></i><i class="bi bi-sun-fill i-sun"></i>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><i class="bi bi-list"></i></button>
+    </div>
+  </nav>
 
-            <h1 class="logo"><a href="index.html">Osanda</a></h1>
-
-            <!-- ======= Nav Menu ======= -->
-            <nav class="nav-menu d-none d-lg-block">
-                <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="certifications.html">Certifications</a></li>
-                    <li><a href="awards.html">Honors & Awards</a></li>
-                    <li><a href="projects.html">Projects & Publications</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <!-- .nav-menu -->
-
-            <div class="header-social-links">
-                <a href="https://twitter.com/osandadeshan" target="_blank" class="twitter"><i
-                        class="icofont-twitter"></i></a>
-                <a href="https://www.facebook.com/osanda.nimalarathna" target="_blank" class="facebook"><i
-                        class="icofont-facebook"></i></a>
-                <a href="https://www.instagram.com/osanda.deshan" target="_blank" class="instagram"><i
-                        class="icofont-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/osandadeshan" target="_blank" class="linkedin"><i
-                        class="icofont-linkedin"></i></i></a>
-            </div>
-
+  <main id="main">
+  <section id="home" class="hero">
+    <div class="blob blob-1" aria-hidden="true"></div>
+    <div class="blob blob-2" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div>
+        <div class="status-pill reveal"><span class="pulse"></span>Open to new opportunities &amp; consulting</div>
+        <h1 class="hero-title reveal d1">Hi, I'm <span class="grad-text">Osanda</span><br>Nimalarathna.</h1>
+        <p class="typed-line reveal d2" aria-label="Lead Software Engineer, Test Automation Architect, Quality Engineering Leader, RPA Solution Architect, Open-Source Creator">
+          <span class="prompt" aria-hidden="true">~$</span> <span id="typed" aria-hidden="true"></span><span class="caret" aria-hidden="true"></span>
+        </p>
+        <p class="hero-desc reveal d2">I help engineering teams ship faster with confidence. For 10+ years I've designed test automation frameworks, built quality pipelines and mentored QE teams — now for Singapore's national trade platform at GovTech.</p>
+        <div class="hero-cta reveal d3">
+          <a href="#projects" class="btn btn-primary">View my work <i class="bi bi-arrow-right"></i></a>
+          <a href="#contact" class="btn btn-ghost"><i class="bi bi-chat-dots"></i> Get in touch</a>
         </div>
-    </header>
-    <!-- End Header -->
-
-    <!-- ======= Home Section ======= -->
-    <section id="hero" class="d-flex align-items-center">
-        <div class="container d-flex flex-column" data-aos="zoom-in" data-aos-delay="100">
-            <h1>Hello, I'm Osanda</h1>
-            <a href="#" class="typewrite" data-period="2000" style="font-size: 20px;"
-                data-type='[ "Software Engineer", "RPA Solution Architect", "Automation Framework Developer", "Open Source Contributor", "Freelancer" ]'>
-            </a>
-            <h5 class="mt-4">A highly focused Lead Engineer experienced in a variety of automation and
-                engineering positions. Organized, methodical and a keen eye for detail results in solid coding and
-                trustworthy automation scripting.</h5>
-            <a href="about.html" class="btn-about arrow">About Me</a>
+        <div class="socials reveal d3">
+          <a href="https://www.linkedin.com/in/osandadeshan" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="https://github.com/osandadeshan" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+<a href="https://osandadeshan.medium.com" target="_blank" rel="noopener" aria-label="Medium"><i class="bi bi-medium"></i></a>
+<a href="https://stackoverflow.com/users/6397151/osanda-deshan" target="_blank" rel="noopener" aria-label="Stack Overflow"><i class="bi bi-stack-overflow"></i></a>
+<a href="https://twitter.com/osandadeshan" target="_blank" rel="noopener" aria-label="X / Twitter"><i class="bi bi-twitter-x"></i></a>
         </div>
-    </section>
-    <!-- End Home -->
+      </div>
 
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-        <div class="container">
-            <div class="copyright">
-                Copyright &copy; 2022 By <strong><span>MaxSoft</span></strong>. All Rights Reserved.
-            </div>
-            <div class="credits">
-                Designed By <a href="https://maxsoftlk.github.io/" target="_blank">MaxSoft</a>
-            </div>
+      <div class="portrait-wrap reveal d2">
+        <div class="portrait-ring glow" aria-hidden="true"></div>
+        <div class="portrait-ring" aria-hidden="true"></div>
+        <div class="portrait"><img src="assets/img/profile.jpg" alt="Portrait of Osanda Nimalarathna" width="750" height="1000" fetchpriority="high"></div>
+        <div class="float-card fc-1"><i class="bi bi-trophy-fill grad-text"></i><div>Rank #1<small>Test Automation University</small></div></div>
+        <div class="float-card fc-2"><i class="bi bi-geo-alt-fill grad-text"></i><div>GovTech<small>Singapore</small></div></div>
+      </div>
+    </div>
+    <a href="#stats" class="scroll-hint" aria-label="Scroll to content"><i class="bi bi-chevron-double-down"></i></a>
+  </section>
+
+  <div class="container" id="stats">
+    <div class="stats">
+      <div class="card stat spot reveal"><div class="num grad-text" data-count="122">122+</div><div class="label">Projects delivered</div></div>
+      <div class="card stat spot reveal d1"><div class="num grad-text" data-count="150">150+</div><div class="label">Public GitHub repositories</div></div>
+      <div class="card stat spot reveal d2"><div class="num grad-text" data-count="14">14+</div><div class="label">Certifications</div></div>
+      <div class="card stat spot reveal d3"><div class="num grad-text" data-count="5">5+</div><div class="label">Honours &amp; awards</div></div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-photo reveal">
+        <img src="assets/img/about-me.jpg" alt="Osanda Nimalarathna" width="900" height="1080" loading="lazy">
+        <div class="exp-badge"><b class="grad-text">10+</b>years building quality software</div>
+      </div>
+      <div>
+        <div class="eyebrow reveal">About me</div>
+        <h2 class="section-title reveal d1">Quality engineer at heart. <span class="grad-text">Builder by habit.</span></h2>
+        <p class="reveal d2 muted">I'm a Lead Software Engineer at GovTech Singapore, where I lead test automation for <b>TradeNet</b> — the National Single Window that processes import, export and transhipment declarations for Singapore's entire trade community.</p>
+        <p class="reveal d2 muted">My work sits where quality meets engineering: I design automation frameworks from the ground up, embed testing into CI/CD, and coach teams to treat quality as everyone's job. Along the way I've published a family of open-source testing tools used by engineers worldwide and ranked #1 on Test Automation University.</p>
+        <ul class="pillars reveal d2"><li><i class="bi bi-diagram-3"></i><div><b>Framework architect</b><span>UI, API, mobile and visual testing frameworks built for scale and readability.</span></div></li><li><i class="bi bi-people"></i><div><b>Team multiplier</b><span>Trainer and mentor who has upskilled QE teams at every company I've joined.</span></div></li><li><i class="bi bi-github"></i><div><b>Open-source creator</b><span>Founder of <a class="inline" href="https://maxsoftlk.github.io/" target="_blank" rel="noopener">MaxSoft</a> and author of IntelliAPI, API Health Checker and other open-source testing tools.</span></div></li></ul>
+        <ul class="info-list reveal d3">
+          <li><i class="bi bi-briefcase"></i><div><span>Current role</span><br>Lead Software Engineer, GovTech</div></li>
+          <li><i class="bi bi-geo-alt"></i><div><span>Based in</span><br>Singapore</div></li>
+          <li><i class="bi bi-mortarboard"></i><div><span>Education</span><br>BSc (Sp.) Computer Science</div></li>
+          <li><i class="bi bi-envelope"></i><div><span>Email</span><br><a href="mailto:osanda.deshan@gmail.com">osanda.deshan@gmail.com</a></div></li>
+        </ul>
+        <div class="hero-cta reveal d3">
+          <a href="#contact" class="btn btn-primary">Let's work together <i class="bi bi-arrow-right"></i></a>
+          <a href="https://www.linkedin.com/in/osandadeshan" class="btn btn-ghost" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> View LinkedIn</a>
         </div>
-    </footer>
-    <!-- End  Footer -->
+      </div>
+    </div>
+  </section>
 
-    <div id="preloader"></div>
-    <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+  <section id="expertise" class="pt-sm">
+    <div class="container">
+      <div class="eyebrow reveal">Expertise</div>
+      <h2 class="section-title reveal d1">Skills &amp; <span class="grad-text">journey</span></h2>
+      <p class="section-lead reveal d2">From intern to lead across Sri Lanka and Singapore — a decade of building automation that teams rely on. Select a role to see the details.</p>
+      <div class="exp-grid">
+        <div class="reveal skills-col">
+          <div class="card skill-group"><h3>Test automation</h3><div class="chips"><span class="chip chip-sm">Playwright</span><span class="chip chip-sm">Selenium</span><span class="chip chip-sm">Appium</span><span class="chip chip-sm">Cucumber</span><span class="chip chip-sm">Gauge</span><span class="chip chip-sm">Robot Framework</span><span class="chip chip-sm">TestNG</span><span class="chip chip-sm">Rest Assured</span></div></div>
+          <div class="card skill-group"><h3>Languages</h3><div class="chips"><span class="chip chip-sm">Java</span><span class="chip chip-sm">Kotlin</span><span class="chip chip-sm">TypeScript</span><span class="chip chip-sm">JavaScript</span><span class="chip chip-sm">Python</span><span class="chip chip-sm">C#</span></div></div>
+          <div class="card skill-group"><h3>Performance &amp; quality</h3><div class="chips"><span class="chip chip-sm">Gatling</span><span class="chip chip-sm">JMeter</span><span class="chip chip-sm">Visual testing</span><span class="chip chip-sm">Chaos engineering</span><span class="chip chip-sm">BDD</span><span class="chip chip-sm">ISTQB practices</span></div></div>
+          <div class="card skill-group"><h3>CI/CD &amp; cloud</h3><div class="chips"><span class="chip chip-sm">GitLab CI</span><span class="chip chip-sm">Jenkins</span><span class="chip chip-sm">Docker</span><span class="chip chip-sm">Kubernetes</span><span class="chip chip-sm">AWS</span><span class="chip chip-sm">Azure</span><span class="chip chip-sm">Firebase</span></div></div>
+          <div class="card skill-group"><h3>RPA &amp; platforms</h3><div class="chips"><span class="chip chip-sm">Automation Anywhere</span><span class="chip chip-sm">IQ Bot</span><span class="chip chip-sm">ACCELQ</span><span class="chip chip-sm">Spring Boot</span><span class="chip chip-sm">Node.js</span></div></div>
+          <div class="card skill-group"><h3>Ways of working</h3><div class="chips"><span class="chip chip-sm">Agile / SAFe</span><span class="chip chip-sm">Code review</span><span class="chip chip-sm">Test strategy</span><span class="chip chip-sm">Mentoring</span><span class="chip chip-sm">JIRA &amp; Xray</span></div></div>
+        </div>
+        <div class="reveal d1">
+          <div class="tabs" role="tablist" aria-label="Career">
+            <button class="tab active" type="button" role="tab" aria-selected="true" aria-controls="pane-exp" data-pane="exp">Experience</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="pane-edu" data-pane="edu">Education</button>
+          </div>
+          <div class="pane show" id="pane-exp" role="tabpanel">
+            <div class="timeline">
+            <details class="card t-item spot now" open>
+              <summary>
+                <span class="when">Feb 2025 — Present</span>
+                <h3>Lead Software Engineer</h3>
+                <div class="org"><a href="https://www.tech.gov.sg/" target="_blank" rel="noopener">GovTech Singapore</a> · via Virtusa · One-North, Singapore</div>
+                <span class="expand" aria-hidden="true"><i class="bi bi-chevron-down"></i></span>
+              </summary>
+              <div class="t-body">
+                
+                <div class="proj-block"><h4 class="proj-name"><a href="https://www.tradenet.gov.sg/" target="_blank" rel="noopener">TradeNet <i class="bi bi-box-arrow-up-right"></i></a></h4><p>Singapore&#x27;s National Single Window for trade declarations — one platform through which the trade and logistics community meets all import, export and transhipment requirements across multiple regulatory agencies.</p></div><h4 class="kc">Key contributions</h4><ul class="kc-list"><li>Lead test automation for TradeNet, building UI, API and visual test suites with Playwright, Cucumber and Spring Boot.</li><li>Own test execution and defect triage, keeping releases on schedule and issues resolved quickly.</li><li>Raise engineering standards through hands-on code reviews and clear, actionable feedback.</li><li>Shape delivery plans by refining requirements, breaking down user stories and estimating effort with the product team.</li></ul><div class="tools"><span class="chip chip-sm">Playwright</span><span class="chip chip-sm">Cucumber</span><span class="chip chip-sm">Spring Boot</span><span class="chip chip-sm">Kotlin</span><span class="chip chip-sm">Gradle</span><span class="chip chip-sm">SHIP-HATS</span><span class="chip chip-sm">GitLab</span><span class="chip chip-sm">VS Code</span><span class="chip chip-sm">IntelliJ IDEA</span><span class="chip chip-sm">Jira</span></div>
+              </div>
+            </details>
+            <details class="card t-item spot">
+              <summary>
+                <span class="when">Aug 2022 — Feb 2025</span>
+                <h3>Lead Automation Engineer</h3>
+                <div class="org"><a href="https://www.activate.sg/" target="_blank" rel="noopener">Activate Interactive</a> · Paya Lebar, Singapore</div>
+                <span class="expand" aria-hidden="true"><i class="bi bi-chevron-down"></i></span>
+              </summary>
+              <div class="t-body">
+                
+                <div class="proj-block"><h4 class="proj-name">SHARE</h4><p>Self-Help And Rehabilitation E-Application — helps supervisees and ex-supervisees take charge of their rehabilitation through learning resources, job recommendations and progress tracking, while helping supervisors engage with them more effectively.</p></div><div class="proj-block"><h4 class="proj-name">MPA</h4><p>The Maritime and Port Authority of Singapore&#x27;s online platform for port information, shipping services, regulations and real-time maritime updates.</p></div><div class="proj-block"><h4 class="proj-name">SGSecure 2.0</h4><p>A national public-safety programme comprising a citizen mobile app for alerts and incident reporting, and an admin portal that gives authorities real-time data to coordinate their response.</p></div><div class="proj-block"><h4 class="proj-name">CRISP</h4><p>Cloud Resource and Infrastructure Services Platform — accelerates government application migration to GCC 2.0 using Infrastructure as Code, with secure, scalable and modular foundations.</p></div><h4 class="kc">Key contributions</h4><ul class="kc-list"><li>Led quality engineering across four Singapore Government digital services, including SGSecure and SHARE.</li><li>Built API automation with Playwright and mobile automation with Appium for iOS and Android.</li><li>Ran performance testing with Gatling to uncover bottlenecks and improve scalability.</li><li>Defined QA standards and practices adopted across project teams.</li><li>Trained QE engineers in modern automation techniques, raising the team&#x27;s overall capability.</li><li>Managed test execution, defect tracking and code reviews to keep quality high and releases predictable.</li></ul><div class="tools"><span class="chip chip-sm">Playwright</span><span class="chip chip-sm">Robot Framework</span><span class="chip chip-sm">Selenium</span><span class="chip chip-sm">Rest Assured</span><span class="chip chip-sm">TypeScript</span><span class="chip chip-sm">Appium</span><span class="chip chip-sm">Android Studio</span><span class="chip chip-sm">Xcode</span><span class="chip chip-sm">Java</span><span class="chip chip-sm">TestNG</span><span class="chip chip-sm">SHIP-HATS</span><span class="chip chip-sm">pCloudy</span><span class="chip chip-sm">GitLab</span><span class="chip chip-sm">Bitbucket</span><span class="chip chip-sm">Gitea</span><span class="chip chip-sm">VS Code</span><span class="chip chip-sm">Gatling</span><span class="chip chip-sm">JMeter</span><span class="chip chip-sm">Maven</span><span class="chip chip-sm">Node.js</span><span class="chip chip-sm">IntelliJ IDEA</span><span class="chip chip-sm">Zephyr</span><span class="chip chip-sm">Xray</span><span class="chip chip-sm">Jira</span></div>
+              </div>
+            </details>
+            <details class="card t-item spot">
+              <summary>
+                <span class="when">Jul 2022 — Aug 2022</span>
+                <h3>Technical Specialist</h3>
+                <div class="org"><a href="https://www.wiley.com/" target="_blank" rel="noopener">Wiley Global Technology</a> · Nawala, Sri Lanka</div>
+                <span class="expand" aria-hidden="true"><i class="bi bi-chevron-down"></i></span>
+              </summary>
+              <div class="t-body">
+                
+                <div class="proj-block"><h4 class="proj-name"><a href="https://authorservices.wiley.com" target="_blank" rel="noopener">Author Services <i class="bi bi-box-arrow-up-right"></i></a></h4><p>Part of the Wiley Publishing Platform — a one-stop shop that helps research authors worldwide publish articles and access the products and services they need.</p></div><h4 class="kc">Key contributions</h4><ul class="kc-list"><li>Led automation and QE processes for Wiley&#x27;s research publishing platform.</li><li>Trained QE team members on advanced web and API automation techniques.</li><li>Reviewed colleagues&#x27; code and set quality standards for the automation suite.</li></ul><div class="tools"><span class="chip chip-sm">Java</span><span class="chip chip-sm">Spring Boot</span><span class="chip chip-sm">React</span><span class="chip chip-sm">Teasy</span><span class="chip chip-sm">Selenium</span><span class="chip chip-sm">Rest Assured</span><span class="chip chip-sm">TestNG</span><span class="chip chip-sm">Allure</span><span class="chip chip-sm">Jenkins</span><span class="chip chip-sm">Cuanto</span><span class="chip chip-sm">Docker</span><span class="chip chip-sm">Dynatrace</span><span class="chip chip-sm">AWS</span><span class="chip chip-sm">TestRail</span><span class="chip chip-sm">Jira</span><span class="chip chip-sm">GitHub</span><span class="chip chip-sm">IntelliJ IDEA</span></div>
+              </div>
+            </details>
+            <details class="card t-item spot">
+              <summary>
+                <span class="when">Jul 2021 — Jun 2022</span>
+                <h3>Associate Technical Specialist</h3>
+                <div class="org"><a href="https://www.wiley.com/" target="_blank" rel="noopener">Wiley Global Technology</a> · Nawala, Sri Lanka</div>
+                <span class="expand" aria-hidden="true"><i class="bi bi-chevron-down"></i></span>
+              </summary>
+              <div class="t-body">
+                
+                <div class="proj-block"><h4 class="proj-name"><a href="https://authorservices.wiley.com" target="_blank" rel="noopener">Author Services <i class="bi bi-box-arrow-up-right"></i></a></h4><p>Part of the Wiley Publishing Platform — a one-stop shop that helps research authors worldwide publish articles and access the products and services they need.</p></div><h4 class="kc">Key contributions</h4><ul class="kc-list"><li>Built plugins that extended the in-house automation frameworks and simplified day-to-day testing.</li><li>Optimised the automation suite for faster, more reliable feedback in Jenkins pipelines.</li><li>Authored QE process and tooling documentation in Confluence to support knowledge sharing.</li></ul><div class="tools"><span class="chip chip-sm">Java</span><span class="chip chip-sm">Spring Boot</span><span class="chip chip-sm">React</span><span class="chip chip-sm">Teasy</span><span class="chip chip-sm">Selenium</span><span class="chip chip-sm">Rest Assured</span><span class="chip chip-sm">TestNG</span><span class="chip chip-sm">Allure</span><span class="chip chip-sm">Jenkins</span><span class="chip chip-sm">Cuanto</span><span class="chip chip-sm">Docker</span><span class="chip chip-sm">Dynatrace</span><span class="chip chip-sm">AWS</span><span class="chip chip-sm">TestRail</span><span class="chip chip-sm">Jira</span><span class="chip chip-sm">GitHub</span><span class="chip chip-sm">IntelliJ IDEA</span></div>
+              </div>
+            </details>
+            <details class="card t-item spot">
+              <summary>
+                <span class="when">Jun 2019 — Jun 2021</span>
+                <h3>Senior Software Quality Engineer</h3>
+                <div class="org"><a href="https://www.wiley.com/" target="_blank" rel="noopener">Wiley Global Technology</a> · Nawala, Sri Lanka</div>
+                <span class="expand" aria-hidden="true"><i class="bi bi-chevron-down"></i></span>
+              </summary>
+              <div class="t-body">
+                
+                <div class="proj-block"><h4 class="proj-name"><a href="https://authorservices.wiley.com" target="_blank" rel="noopener">Author Services <i class="bi bi-box-arrow-up-right"></i></a></h4><p>Part of the Wiley Publishing Platform — a one-stop shop that helps research authors worldwide publish articles and access the products and services they need.</p></div><h4 class="kc">Key contributions</h4><ul class="kc-list"><li>Designed and maintained UI and API test suites with Teasy, Selenium and Rest Assured.</li><li>Designed test matrices and derived test scenarios for user stories.</li><li>Contributed to user story breakdown and estimation sessions.</li></ul><div class="tools"><span class="chip chip-sm">Java</span><span class="chip chip-sm">Spring Boot</span><span class="chip chip-sm">React</span><span class="chip chip-sm">Teasy</span><span class="chip chip-sm">Selenium</span><span class="chip chip-sm">Rest Assured</span><span class="chip chip-sm">TestNG</span><span class="chip chip-sm">Allure</span><span class="chip chip-sm">Jenkins</span><span class="chip chip-sm">Cuanto</span><span class="chip chip-sm">Docker</span><span class="chip chip-sm">Dynatrace</span><span class="chip chip-sm">AWS</span><span class="chip chip-sm">TestRail</span><span class="chip chip-sm">Jira</span><span class="chip chip-sm">GitHub</span><span class="chip chip-sm">IntelliJ IDEA</span></div>
+              </div>
+            </details>
+            <details class="card t-item spot">
+              <summary>
+                <span class="when">Nov 2018 — May 2019</span>
+                <h3>Senior Software Quality Engineer</h3>
+                <div class="org"><a href="https://www.cinglevue.com/" target="_blank" rel="noopener">CingleVue International</a> · Kollupitiya, Sri Lanka</div>
+                <span class="expand" aria-hidden="true"><i class="bi bi-chevron-down"></i></span>
+              </summary>
+              <div class="t-body">
+                
+                <div class="proj-block"><h4 class="proj-name">Virtuoso</h4><p>An e-learning platform that enhances teaching and learning outcomes, with research into speech recognition as a new way for users to interact with the software.</p></div><h4 class="kc">Key contributions</h4><ul class="kc-list"><li>Designed and maintained automated tests for a web-based e-learning platform using Robot Framework.</li><li>Ran training sessions that helped the QE team adopt effective Robot Framework practices.</li><li>Managed test cases, execution and defect tracking to maintain a high quality bar.</li><li>Contributed to user story breakdown and estimation sessions.</li></ul><div class="tools"><span class="chip chip-sm">Robot Framework</span><span class="chip chip-sm">Python</span><span class="chip chip-sm">JavaScript</span><span class="chip chip-sm">TypeScript</span><span class="chip chip-sm">Protractor</span><span class="chip chip-sm">Git</span><span class="chip chip-sm">Jenkins</span><span class="chip chip-sm">Kubernetes</span><span class="chip chip-sm">Docker</span><span class="chip chip-sm">Azure</span></div>
+              </div>
+            </details>
+            <details class="card t-item spot">
+              <summary>
+                <span class="when">Aug 2017 — Oct 2018</span>
+                <h3>Software Quality Engineer</h3>
+                <div class="org"><a href="https://www.pearson.com/" target="_blank" rel="noopener">Pearson Lanka</a> · Dematagoda, Sri Lanka</div>
+                <span class="expand" aria-hidden="true"><i class="bi bi-chevron-down"></i></span>
+              </summary>
+              <div class="t-body">
+                
+                <div class="proj-block"><h4 class="proj-name">Pearson Prep</h4><p>A study app that auto-creates flashcards from students&#x27; notes, offers expert decks aligned to Pearson textbooks and shows real-time progress to guide study choices.</p></div><h4 class="kc">Key contributions</h4><ul class="kc-list"><li>Built a cross-platform mobile automation framework with Gauge, Appium and Java — one codebase covering both Android and iOS.</li><li>Introduced IntelliAPI, my codeless API testing framework, which the Pearson Mobile team adopted for API automation.</li><li>Set up CI/CD pipelines for the mobile and API test suites, speeding up feedback on every build.</li><li>Guided the QE team on automation strategy and kept testing aligned with project goals and timelines.</li><li>Performed functional and non-functional testing, and designed manual test cases in HP ALM.</li><li>Presented product demos to product owners and documented QE processes in Confluence.</li></ul><div class="tools"><span class="chip chip-sm">Java</span><span class="chip chip-sm">Gauge</span><span class="chip chip-sm">Appium</span><span class="chip chip-sm">Android SDK</span><span class="chip chip-sm">iOS</span><span class="chip chip-sm">Selenium</span><span class="chip chip-sm">Rest Assured</span><span class="chip chip-sm">Maven</span><span class="chip chip-sm">JMeter</span><span class="chip chip-sm">Git</span><span class="chip chip-sm">Jenkins</span></div>
+              </div>
+            </details>
+            <details class="card t-item spot">
+              <summary>
+                <span class="when">Jan 2017 — Jul 2017</span>
+                <h3>Associate Software Quality Engineer</h3>
+                <div class="org"><a href="https://mitrai.com/" target="_blank" rel="noopener">Mitra Innovation</a> · Moratuwa, Sri Lanka</div>
+                <span class="expand" aria-hidden="true"><i class="bi bi-chevron-down"></i></span>
+              </summary>
+              <div class="t-body">
+                
+                <div class="proj-block"><h4 class="proj-name">Blue Squirrel</h4><p>A personal finance app that helps people plan and achieve their life goals. Mitra was the technology partner for migrating the iOS app to Android.</p></div><div class="proj-block"><h4 class="proj-name">Modern Hardware</h4><p>Sales process automation for a leading steel and hardware importer — covering orders, invoicing, customer management, a sales dashboard and integrations.</p></div><div class="proj-block"><h4 class="proj-name">Kraydel</h4><p>Connected-care technology that combines biometrics and IoT to help elderly people stay safe and in touch with their loved ones.</p></div><h4 class="kc">Key contributions</h4><ul class="kc-list"><li>Built API and mobile automation frameworks with Gauge, Rest Assured, Appium and Java for Android and iOS.</li><li>Wrote test strategies, plans and regression reports based on functional and technical specifications.</li><li>Managed QA deployments and build artifacts with TeamCity.</li><li>Guided QE team members on effective automation practices.</li><li>Designed manual test cases in Zephyr and performed functional testing of mobile apps.</li><li>Managed test execution and defect tracking, and took part in code reviews and estimation.</li></ul><div class="tools"><span class="chip chip-sm">React Native</span><span class="chip chip-sm">.NET Core 1.1</span><span class="chip chip-sm">MySQL</span><span class="chip chip-sm">Identity Server 4</span><span class="chip chip-sm">EF Core</span><span class="chip chip-sm">Gauge</span><span class="chip chip-sm">Java</span><span class="chip chip-sm">Appium</span><span class="chip chip-sm">Selenium</span><span class="chip chip-sm">Rest Assured</span><span class="chip chip-sm">Jira</span><span class="chip chip-sm">Zephyr</span><span class="chip chip-sm">Bitbucket</span></div>
+              </div>
+            </details>
+            <details class="card t-item spot">
+              <summary>
+                <span class="when">Aug 2016 — Dec 2016</span>
+                <h3>Intern Software Engineer</h3>
+                <div class="org"><a href="https://mitrai.com/" target="_blank" rel="noopener">Mitra Innovation</a> · Moratuwa, Sri Lanka</div>
+                <span class="expand" aria-hidden="true"><i class="bi bi-chevron-down"></i></span>
+              </summary>
+              <div class="t-body">
+                
+                <div class="proj-block"><h4 class="proj-name">Ramsay Health Care</h4><p>A communication platform for Ramsay Health Care, a global healthcare provider operating 530+ facilities across 10 countries.</p></div><h4 class="kc">Key contributions</h4><ul class="kc-list"><li>Delivered a proof of concept on ActiveCampaign to automate marketing workflows.</li><li>Integrated SendGrid for cloud email delivery, removing the need to maintain mail servers.</li><li>Built responsive HTML email templates and dynamic, event-driven email notifications.</li><li>Developed an activity log that gives administrators visibility of user actions.</li><li>Demonstrated features to the client and iterated on their feedback in an Agile team.</li></ul><div class="tools"><span class="chip chip-sm">C#</span><span class="chip chip-sm">ASP.NET</span><span class="chip chip-sm">WebAPI</span><span class="chip chip-sm">MVC</span><span class="chip chip-sm">Angular</span><span class="chip chip-sm">HTML5</span><span class="chip chip-sm">CSS</span><span class="chip chip-sm">Azure</span><span class="chip chip-sm">Git</span><span class="chip chip-sm">Java</span><span class="chip chip-sm">Gauge</span><span class="chip chip-sm">Appium</span><span class="chip chip-sm">Android SDK</span><span class="chip chip-sm">iOS</span><span class="chip chip-sm">Selenium</span><span class="chip chip-sm">Rest Assured</span><span class="chip chip-sm">Maven</span><span class="chip chip-sm">JMeter</span><span class="chip chip-sm">Jenkins</span></div>
+              </div>
+            </details>
+            </div>
+          </div>
+          <div class="pane" id="pane-edu" role="tabpanel">
+            <div class="timeline">
+            <details class="card t-item spot">
+              <summary>
+                <span class="when">2013 — 2017</span>
+                <h3>BSc (Special) in Computer Science &amp; Technology</h3>
+                <div class="org">Uva Wellassa University · Badulla, Sri Lanka</div>
+                <span class="expand" aria-hidden="true"><i class="bi bi-chevron-down"></i></span>
+              </summary>
+              <div class="t-body">
+                
+                <ul class="kc-list"><li>Four-year specialist degree covering software engineering, algorithms, networking and data systems.</li><li>Research: MySight, an Android app that reads printed text aloud for visually impaired users — published in the University of Kelaniya repository.</li></ul>
+              </div>
+            </details>
+            <details class="card t-item spot">
+              <summary>
+                <span class="when">1998 — 2011</span>
+                <h3>G.C.E. Advanced &amp; Ordinary Levels</h3>
+                <div class="org">G/Dharmasoka College · Ambalangoda, Sri Lanka</div>
+                <span class="expand" aria-hidden="true"><i class="bi bi-chevron-down"></i></span>
+              </summary>
+              <div class="t-body">
+                
+                <ul class="kc-list"><li>A/L 2011: Combined Maths (A), General Information Technology (A), General English (A), Physics (C), Chemistry (C).</li><li>O/L 2008: 9 A grades.</li></ul>
+              </div>
+            </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-    <script src="assets/vendor/counterup/counterup.min.js"></script>
-    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/venobox/venobox.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
+  <section id="services" class="alt">
+    <div class="container">
+      <div class="eyebrow reveal">Services</div>
+      <h2 class="section-title reveal d1">How I can <span class="grad-text">help you</span></h2>
+      <p class="section-lead reveal d2">From a framework built from scratch to a team ready to own quality — here's how I can help.</p>
+      <div class="grid-4">
+        <div class="card service hover spot reveal">
+          <span class="idx" aria-hidden="true">01</span>
+          <div class="ico"><i class="bi bi-diagram-3"></i></div>
+          <h3>Automation Framework Development</h3>
+          <p>Scalable, maintainable test automation for web, mobile and APIs — designed around your stack, wired into CI/CD and easy for your team to extend.</p>
+        </div>
+        <div class="card service hover spot reveal d1">
+          <span class="idx" aria-hidden="true">02</span>
+          <div class="ico"><i class="bi bi-lightbulb"></i></div>
+          <h3>Quality Engineering Consulting</h3>
+          <p>Practical advice on test strategy, tool selection and framework architecture, so you invest in automation that pays off.</p>
+        </div>
+        <div class="card service hover spot reveal d2">
+          <span class="idx" aria-hidden="true">03</span>
+          <div class="ico"><i class="bi bi-easel"></i></div>
+          <h3>Training &amp; Workshops</h3>
+          <p>Hands-on sessions on web, API and mobile automation that focus on real-world practice — your team leaves ready to apply it the next day.</p>
+        </div>
+        <div class="card service hover spot reveal d3">
+          <span class="idx" aria-hidden="true">04</span>
+          <div class="ico"><i class="bi bi-rocket-takeoff"></i></div>
+          <h3>Freelance Engineering</h3>
+          <p>Flexible, end-to-end delivery for projects such as:</p><ul class="svc-list"><li><i class="bi bi-check2"></i>Test automation</li><li><i class="bi bi-check2"></i>Robotic process automation (RPA)</li><li><i class="bi bi-check2"></i>Web application development</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+  <section id="projects">
+    <div class="container">
+      <div class="proj-head">
+        <div>
+          <div class="eyebrow reveal">Portfolio</div>
+      <h2 class="section-title reveal d1">Projects &amp; <span class="grad-text">publications</span></h2>
+      <p class="section-lead reveal d2">Open-source tools I created to solve real testing problems — adopted by teams and engineers around the world.</p>
+        </div>
+        <div class="tabs reveal" id="filters" role="group" aria-label="Filter projects">
+          <button class="tab active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="tab" type="button" data-filter="pub" aria-pressed="false">Publications</button>
+          <button class="tab" type="button" data-filter="proj" aria-pressed="false">Projects</button>
+        </div>
+      </div>
+      <div class="grid-3">
+        <a href="maxsoft-testng-test-results-analyzer.html" class="card project hover spot reveal" data-cat="pub">
+          <div class="thumb"><img src="assets/img/publications/testngresultsanalyzer.png" alt="" width="640" height="400" loading="lazy"><span class="tag">Publication</span></div>
+          <div class="body"><h3>MaxSoft TestNG Test Results Analyzer</h3><p>Turns TestNG runs into an Excel report that groups failed and skipped tests by root cause, so you can fix the biggest issues first.</p><span class="more">View details <i class="bi bi-arrow-right"></i></span></div>
+        </a>
+        <a href="maxsoft-extent-reporter.html" class="card project hover spot reveal d1" data-cat="pub">
+          <div class="thumb"><img src="assets/img/publications/extentreport1.png" alt="" width="640" height="400" loading="lazy"><span class="tag">Publication</span></div>
+          <div class="body"><h3>MaxSoft Extent Reporter</h3><p>Drop-in plugin that generates rich Extent HTML reports — with screenshots on failure — for any TestNG framework, with zero reporting code.</p><span class="more">View details <i class="bi bi-arrow-right"></i></span></div>
+        </a>
+        <a href="maxsoft-api-healthchecker.html" class="card project hover spot reveal d2" data-cat="pub">
+          <div class="thumb"><img src="assets/img/publications/healthchecker1.png" alt="" width="640" height="400" loading="lazy"><span class="tag">Publication</span></div>
+          <div class="body"><h3>MaxSoft API Health Checker</h3><p>Real-time dashboard that monitors every backend service across environments. My most popular repo, with 23 stars and 21 forks on GitHub.</p><span class="more">View details <i class="bi bi-arrow-right"></i></span></div>
+        </a>
+        <a href="test-automation-master.html" class="card project hover spot reveal" data-cat="pub">
+          <div class="thumb"><img src="assets/img/publications/testautomationmaster1.jpg" alt="" width="640" height="400" loading="lazy"><span class="tag">Publication</span></div>
+          <div class="body"><h3>Test Automation Master</h3><p>My Medium publication of hands-on tutorials on web, mobile and API automation and DevOps, followed by 275+ readers.</p><span class="more">View details <i class="bi bi-arrow-right"></i></span></div>
+        </a>
+        <a href="maxsoft-webdriver-manager.html" class="card project hover spot reveal d1" data-cat="pub">
+          <div class="thumb"><img src="assets/img/publications/webdrivermanager1.png" alt="" width="640" height="400" loading="lazy"><span class="tag">Publication</span></div>
+          <div class="body"><h3>MaxSoft WebDriver Manager</h3><p>Launch any browser on any OS with a single line of code — no driver downloads or configuration required.</p><span class="more">View details <i class="bi bi-arrow-right"></i></span></div>
+        </a>
+        <a href="maxsoft-greporter.html" class="card project hover spot reveal d2" data-cat="pub">
+          <div class="thumb"><img src="assets/img/publications/greporter1.png" alt="" width="640" height="400" loading="lazy"><span class="tag">Publication</span></div>
+          <div class="body"><h3>MaxSoft GReporter</h3><p>Gauge plugin that automatically emails a visual test summary to stakeholders after every run — no more manual status reports.</p><span class="more">View details <i class="bi bi-arrow-right"></i></span></div>
+        </a>
+        <a href="maxsoft-intelliapi.html" class="card project hover spot reveal" data-cat="pub">
+          <div class="thumb"><img src="assets/img/publications/intelliapi1.jpg" alt="" width="640" height="400" loading="lazy"><span class="tag">Publication</span></div>
+          <div class="body"><h3>MaxSoft IntelliAPI</h3><p>The first codeless, cross-platform tool for API and database testing. Write tests in plain business language and get rich reports out of the box.</p><span class="more">View details <i class="bi bi-arrow-right"></i></span></div>
+        </a>
+        <a href="mysight.html" class="card project hover spot reveal d1" data-cat="pub">
+          <div class="thumb"><img src="assets/img/publications/mysight.jpg" alt="" width="640" height="400" loading="lazy"><span class="tag">Publication</span></div>
+          <div class="body"><h3>MySight — A New Vision for the Blind</h3><p>Research app that lets visually impaired people read books and receipts aloud using just their phone&#x27;s camera.</p><span class="more">View details <i class="bi bi-arrow-right"></i></span></div>
+        </a>
+        <a href="maxsoft-webbot.html" class="card project hover spot reveal d2" data-cat="proj">
+          <div class="thumb"><img src="assets/img/projects/webbot1.jpg" alt="" width="640" height="400" loading="lazy"><span class="tag">Project</span></div>
+          <div class="body"><h3>MaxSoft WebBot</h3><p>Codeless, cross-platform web UI automation. Anyone on the team can write tests in plain language, with parallel runs and live reports.</p><span class="more">View details <i class="bi bi-arrow-right"></i></span></div>
+        </a>
+        <a href="soapui-to-gauge.html" class="card project hover spot reveal" data-cat="proj">
+          <div class="thumb"><img src="assets/img/projects/soapuitogauge.png" alt="" width="640" height="400" loading="lazy"><span class="tag">Project</span></div>
+          <div class="body"><h3>SoapUI to Gauge Plugin</h3><p>Runs SoapUI test suites from Gauge and produces detailed HTML reports — reporting that the free edition of SoapUI lacks.</p><span class="more">View details <i class="bi bi-arrow-right"></i></span></div>
+        </a>
+        <a href="text-extractor.html" class="card project hover spot reveal d1" data-cat="proj">
+          <div class="thumb"><img src="assets/img/projects/text-extractor.png" alt="" width="640" height="400" loading="lazy"><span class="tag">Project</span></div>
+          <div class="body"><h3>Text Extractor — OCR Scanner</h3><p>Android app that captures text from any image so you can edit, copy and share it instantly.</p><span class="more">View details <i class="bi bi-arrow-right"></i></span></div>
+        </a>
+        <a href="mockserver.html" class="card project hover spot reveal d2" data-cat="proj">
+          <div class="thumb"><img src="assets/img/projects/mockserver.png" alt="" width="640" height="400" loading="lazy"><span class="tag">Project</span></div>
+          <div class="body"><h3>Mock API Server</h3><p>A reference implementation for building and deploying a lightweight mock API server with Express.js and Firebase in minutes.</p><span class="more">View details <i class="bi bi-arrow-right"></i></span></div>
+        </a>
+      </div>
+    </div>
+  </section>
 
+  <section id="credentials" class="alt">
+    <div class="container">
+      <div class="eyebrow reveal">Credentials</div>
+      <h2 class="section-title reveal d1">Certifications &amp; <span class="grad-text">awards</span></h2>
+      <p class="section-lead reveal d2">Industry-recognised certifications and awards, linked to their official verification pages where available.</p>
+      <div class="cred-wrap">
+        <div class="tabs reveal" role="tablist" aria-label="Credentials">
+          <button class="tab active" type="button" role="tab" aria-selected="true" aria-controls="pane-certs" data-pane="certs">Certifications (14)</button>
+          <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="pane-awards" data-pane="awards">Honours &amp; awards (5)</button>
+        </div>
+        <div class="pane show" id="pane-certs" role="tabpanel">
+          <div class="grid-3">
+          <a class="card cred hover spot" href="https://certificate.accelq.com/verify/173bb239690" target="_blank" rel="noopener" ><div class="logo-box"><img src="assets/img/accelq.png" alt="" width="48" height="48" loading="lazy"></div><div><h3>Certified ACCELQ Automation Expert</h3><small>ACCELQ · Oct 2023</small><p class="cred-desc">Advanced design, architecture and development of complex automation suites on ACCELQ.</p></div><i class="bi bi-box-arrow-up-right verify" aria-hidden="true"></i></a>
+          <a class="card cred hover spot" href="https://certificate.accelq.com/verify/6f7f4a2e689" target="_blank" rel="noopener" ><div class="logo-box"><img src="assets/img/accelq.png" alt="" width="48" height="48" loading="lazy"></div><div><h3>Certified ACCELQ Automation Engineer</h3><small>ACCELQ · Oct 2023</small><p class="cred-desc">Building, managing and scaling test automation on the ACCELQ platform.</p></div><i class="bi bi-box-arrow-up-right verify" aria-hidden="true"></i></a>
+          <a class="card cred hover spot" href="https://certificates.automationanywhere.com/f2a97613-6e23-4fdf-9446-79df82ed5a5b" target="_blank" rel="noopener" ><div class="logo-box"><img src="assets/img/architect.png" alt="" width="48" height="48" loading="lazy"></div><div><h3>Certified RPA Solution Architect</h3><small>Automation Anywhere · Aug 2020</small><p class="cred-desc">Designing large-scale, highly available, multi-bot RPA solutions, including disaster recovery.</p></div><i class="bi bi-box-arrow-up-right verify" aria-hidden="true"></i></a>
+          <a class="card cred hover spot" href="https://certificates.automationanywhere.com/f37c8359-5da9-433c-a224-fe3a3faf1c42" target="_blank" rel="noopener" ><div class="logo-box"><img src="assets/img/bot_developer.png" alt="" width="48" height="48" loading="lazy"></div><div><h3>Certified Bot Developer — Enterprise 11</h3><small>Automation Anywhere · Aug 2021</small><p class="cred-desc">Building, deploying and maintaining bots on Automation Anywhere Enterprise 11.</p></div><i class="bi bi-box-arrow-up-right verify" aria-hidden="true"></i></a>
+          <a class="card cred hover spot" href="https://certificates.automationanywhere.com/67fb31cb-2f22-4157-8f7a-93b2d6c6d2dc" target="_blank" rel="noopener" ><div class="logo-box"><img src="assets/img/bot_developer_360.png" alt="" width="48" height="48" loading="lazy"></div><div><h3>Certified Bot Developer — Automation 360</h3><small>Automation Anywhere · Aug 2021</small><p class="cred-desc">Resilient bot development with Automation 360, AISense and inline Python and JavaScript scripting.</p></div><i class="bi bi-box-arrow-up-right verify" aria-hidden="true"></i></a>
+          <a class="card cred hover spot" href="https://certificates.automationanywhere.com/2fb63b0e-af37-4f37-bc7e-0dfae0b4477f" target="_blank" rel="noopener" ><div class="logo-box"><img src="assets/img/iq_bot_developer.png" alt="" width="48" height="48" loading="lazy"></div><div><h3>Certified IQ Bot Developer</h3><small>Automation Anywhere · Aug 2021</small><p class="cred-desc">Intelligent document processing for semi-structured and unstructured data with IQ Bot.</p></div><i class="bi bi-box-arrow-up-right verify" aria-hidden="true"></i></a>
+          <a class="card cred hover spot" href="https://certificates.automationanywhere.com/e78aaf13-f62c-436e-bfd4-9bd7e643de40" target="_blank" rel="noopener" ><div class="logo-box"><img src="assets/img/secure_bot_developer.png" alt="" width="48" height="48" loading="lazy"></div><div><h3>Certified Secure Bot Developer</h3><small>Automation Anywhere · Sep 2021</small><p class="cred-desc">Secure bot design, development and deployment under Automation Anywhere&#x27;s Bot Security Program.</p></div><i class="bi bi-box-arrow-up-right verify" aria-hidden="true"></i></a>
+          <a class="card cred hover spot" href="https://www.hackerrank.com/certificates/3fbf0403009f" target="_blank" rel="noopener" ><div class="logo-box"><img src="assets/img/hackerrank.png" alt="" width="48" height="48" loading="lazy"></div><div><h3>HackerRank Java (Basic) Certificate</h3><small>HackerRank · Aug 2021</small><p class="cred-desc">Verified Java skills: object-oriented programming, collections, generics, exception handling and more.</p></div><i class="bi bi-box-arrow-up-right verify" aria-hidden="true"></i></a>
+          <div class="card cred hover spot" ><div class="logo-box"><img src="assets/img/mongodb-basics.png" alt="" width="48" height="48" loading="lazy"></div><div><h3>MongoDB Basics</h3><small>MongoDB University · Dec 2021</small><p class="cred-desc">CRUD, indexing, data modelling and aggregation pipelines with MongoDB and Atlas.</p></div></div>
+          <div class="card cred hover spot" ><div class="logo-box"><img src="assets/img/mongodb-basics.png" alt="" width="48" height="48" loading="lazy"></div><div><h3>MongoDB Cluster Administration</h3><small>MongoDB University · Apr 2022</small><p class="cred-desc">Administering standalone nodes, replica sets and sharded clusters.</p></div></div>
+          <a class="card cred hover spot" href="https://www.credential.net/92812c7b-decd-4e82-90e1-d654f870394e" target="_blank" rel="noopener" ><div class="logo-box"><img src="assets/img/chaos.jpg" alt="" width="48" height="48" loading="lazy"></div><div><h3>Gremlin Certified Chaos Engineering Practitioner</h3><small>Gremlin · Jun 2021</small><p class="cred-desc">Planning and running chaos experiments and GameDays to build more resilient systems.</p></div><i class="bi bi-box-arrow-up-right verify" aria-hidden="true"></i></a>
+          <a class="card cred hover spot" href="https://www.sl-stb.org/exam/results.html" target="_blank" rel="noopener" ><div class="logo-box"><img src="assets/img/istqb-ctfl.png" alt="" width="48" height="48" loading="lazy"></div><div><h3>ISTQB® Certified Tester — Foundation Level</h3><small>ISTQB · Jun 2017</small><p class="cred-desc">The internationally recognised foundation of software testing principles and practice.</p></div><i class="bi bi-box-arrow-up-right verify" aria-hidden="true"></i></a>
+          <a class="card cred hover spot" href="https://www.youracclaim.com/badges/2682aa4d-51c2-4db0-b7ea-080f6174ce0f" target="_blank" rel="noopener" ><div class="logo-box"><img src="assets/img/ase.png" alt="" width="48" height="48" loading="lazy"></div><div><h3>Certified SAFe® 5 Agile Software Engineer</h3><small>Scaled Agile, Inc. · Feb 2021</small><p class="cred-desc">Test-first development, BDD and built-in quality in Lean-Agile delivery.</p></div><i class="bi bi-box-arrow-up-right verify" aria-hidden="true"></i></a>
+          <a class="card cred hover spot" href="https://www.youracclaim.com/badges/6deb4350-1fc3-4758-a1be-ecfdb04bf17a" target="_blank" rel="noopener" ><div class="logo-box"><img src="assets/img/agilist.png" alt="" width="48" height="48" loading="lazy"></div><div><h3>Certified SAFe® 5 Agilist</h3><small>Scaled Agile, Inc. · Jul 2020</small><p class="cred-desc">Leading Lean-Agile transformation, PI Planning and Agile Release Trains at enterprise scale.</p></div><i class="bi bi-box-arrow-up-right verify" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="pane" id="pane-awards" role="tabpanel">
+          <div class="grid-3">
+          <a class="card cred award hover spot" href="https://testautomationu.applitools.com/tau100.html" target="_blank" rel="noopener" ><div class="logo-box"><i class="bi bi-trophy-fill"></i></div><div><h3>#1 on Test Automation University</h3><small>Test Automation University · May 2020</small><p class="cred-desc">Ranked first on the leaderboard of Applitools&#x27; Test Automation University, a leading free learning platform for test automation.</p></div><i class="bi bi-box-arrow-up-right verify" aria-hidden="true"></i></a>
+          <a class="card cred award hover spot" href="https://www.hackerrank.com/leaderboard?filter=osandadeshan&filter_on=hacker&limit=10&page=1&track=java&type=practice" target="_blank" rel="noopener" ><div class="logo-box"><i class="bi bi-cup-hot-fill"></i></div><div><h3>#1 for Java on HackerRank</h3><small>HackerRank · May 2020</small><p class="cred-desc">Top-ranked on the HackerRank Java practice leaderboard.</p></div><i class="bi bi-box-arrow-up-right verify" aria-hidden="true"></i></a>
+          <a class="card cred award hover spot" href="https://www.hackerrank.com/profile/osandadeshan" target="_blank" rel="noopener" ><div class="logo-box"><i class="bi bi-award-fill"></i></div><div><h3>HackerRank Gold — Problem Solving</h3><small>HackerRank · Jun 2020</small><p class="cred-desc">Gold badge earned for algorithmic problem solving.</p></div><i class="bi bi-box-arrow-up-right verify" aria-hidden="true"></i></a>
+          <a class="card cred award hover spot" href="https://www.hackerrank.com/profile/osandadeshan" target="_blank" rel="noopener" ><div class="logo-box"><i class="bi bi-award-fill"></i></div><div><h3>HackerRank Gold — JavaScript</h3><small>HackerRank · Apr 2020</small><p class="cred-desc">Gold badge earned for JavaScript.</p></div><i class="bi bi-box-arrow-up-right verify" aria-hidden="true"></i></a>
+          <div class="card cred award hover spot" ><div class="logo-box"><i class="bi bi-lightning-charge-fill"></i></div><div><h3>1st Runner-up — Deft Coders Hackathon 2015</h3><small>Computer Society of Uva Wellassa University · Mar 2015</small><p class="cred-desc">Placed second in the annual hackathon run by the Computer Society of Uva Wellassa University.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <div class="blob blob-3" aria-hidden="true"></div>
+    <div class="container center">
+      <div class="eyebrow reveal">Testimonials</div>
+      <h2 class="section-title reveal d1">What colleagues <span class="grad-text">say</span></h2>
+      <div class="t-slider card reveal d2" aria-roledescription="carousel" aria-label="Testimonials">
+        <button class="icon-btn t-nav prev" type="button" aria-label="Previous testimonial"><i class="bi bi-chevron-left"></i></button>
+        <div class="t-track" aria-live="polite">
+          <figure class="quote active"><i class="bi bi-quote qi grad-text" aria-hidden="true"></i><blockquote><p>I rarely come across real talents who stand out like Osanda. He is exceptionally smart, honest, hardworking, friendly and very easy to work with, and his attention to detail is impressive. Osanda has well-grounded experience in designing high-ROI test automation frameworks — from API to web and mobile. His exceptional automation skills, combined with his passion for innovation, made a dramatic impact on the organisation. He is results-driven and completed his assignments on time, often ahead of schedule, and he is well respected and highly regarded by all stakeholders. I highly recommend Osanda — he is a huge asset to any team.</p></blockquote><figcaption class="who"><img src="assets/img/testimonials/gemunu.jpg" alt="" width="56" height="56" loading="lazy"><div><b>Gemunu Priyadarshana</b><small>Senior Quality Engineering Lead at Mitra Innovation, Sri Lanka</small></div></figcaption></figure>
+          <figure class="quote"><i class="bi bi-quote qi grad-text" aria-hidden="true"></i><blockquote><p>It was fantastic to work with Osanda — an exceptional automation engineer who is broad-minded and has exceptional knowledge of the test automation arena. He developed a test automation framework called IntelliAPI, which the Pearson Mobile team uses to automate API tests. He also introduced a mobile automation framework using Gauge and Appium to automate Android and iOS tests, and a web automation framework using Gauge and Selenium that can automate any browser on any platform. In parallel, he contributed to the Gauge framework developed by ThoughtWorks, and he is an active blogger whose technical articles are a great reference for anyone learning automation testing. He handles pressure well, is hardworking and self-motivated, and can mentor and coach other team members. I am sure he is an exceptional asset to any team.</p></blockquote><figcaption class="who"><img src="assets/img/testimonials/dilp.jpg" alt="" width="56" height="56" loading="lazy"><div><b>Dilp Udara Wickramasinghe</b><small>Quality Engineering Lead at Sysco LABS, Sri Lanka</small></div></figcaption></figure>
+          <figure class="quote"><i class="bi bi-quote qi grad-text" aria-hidden="true"></i><blockquote><p>Osanda is a very enthusiastic, creative and innovative person who never limits himself to what his job role requires. I met him at Mitra Innovation, where he was an Associate Quality Assurance Engineer on the same project I worked on as a business analyst. He is keen to gain new knowledge every day and apply it to practical scenarios — his performance and innovations amazed us daily. He never hesitated to help a team member, share what he had learned or work towards the end goal. That is what made him a unique team player and an asset to the team.</p></blockquote><figcaption class="who"><img src="assets/img/testimonials/pulani.jpg" alt="" width="56" height="56" loading="lazy"><div><b>Pulani Ranasinghe</b><small>Founder, Loons Lab · Director, Layer 7 Innovations</small></div></figcaption></figure>
+          <figure class="quote"><i class="bi bi-quote qi grad-text" aria-hidden="true"></i><blockquote><p>Osanda is a highly skilled Java-based automation engineer, with automation framework development skills covering UI, API and mobile automation. I highly recommend him for an automation engineering position.</p></blockquote><figcaption class="who"><img src="assets/img/testimonials/isuru.jpg" alt="" width="56" height="56" loading="lazy"><div><b>Isuru Binduhewa</b><small>Senior Technical Specialist, Quality Engineering at Wiley Global Technology</small></div></figcaption></figure>
+          <figure class="quote"><i class="bi bi-quote qi grad-text" aria-hidden="true"></i><blockquote><p>Automation is no longer a buzzword — it&#x27;s a strategic priority that defines an organisation&#x27;s success. As far as automation training is concerned, Osanda Nimalarathna could be called a &#x27;maestro&#x27; of our time. Highly technical, competent and knowledgeable, his teaching skill is unmatched. His sessions were extremely informative and interactive, focusing not only on theory but primarily on practice — applying automation and its advanced methods in the ever-evolving discipline of software engineering. On a personal note, Osanda is a kind and gentle individual, always willing to contribute to the well-being of others. I see him as a great leader.</p></blockquote><figcaption class="who"><img src="assets/img/testimonials/harshan.jpg" alt="" width="56" height="56" loading="lazy"><div><b>Harsharn Wijewardana</b><small>Quality Engineering Lead</small></div></figcaption></figure>
+        </div>
+        <button class="icon-btn t-nav next" type="button" aria-label="Next testimonial"><i class="bi bi-chevron-right"></i></button>
+      </div>
+      <div class="dots" id="dots"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="pt-sm">
+    <div class="container">
+      <div class="card contact-wrap reveal">
+        <div class="blob blob-4" aria-hidden="true"></div>
+        <div>
+          <div class="eyebrow">Contact</div>
+          <h2 class="section-title">Let's build quality <span class="grad-text">together</span>.</h2>
+          <p class="muted mb-2">Hiring for a quality engineering or automation role, or need help with a project? I'd love to hear from you.</p>
+          <div class="contact-item"><div class="ico"><i class="bi bi-envelope"></i></div><div><small>Email</small><a href="mailto:osanda.deshan@gmail.com">osanda.deshan@gmail.com</a></div></div>
+          <div class="contact-item"><div class="ico"><i class="bi bi-telephone"></i></div><div><small>Phone</small><a href="tel:+94715522087">+94 71 55 22 087</a></div></div>
+          <div class="contact-item"><div class="ico"><i class="bi bi-geo-alt"></i></div><div><small>Location</small><span>Singapore</span></div></div>
+        </div>
+        <form id="contactForm" action="https://formsubmit.co/ajax/osanda.deshan@gmail.com" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="New message from osandadeshan.github.io">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="form-row">
+            <div class="field"><input id="f-name" name="name" placeholder=" " autocomplete="name" required><label for="f-name">Your name</label></div>
+            <div class="field"><input id="f-email" name="email" type="email" placeholder=" " autocomplete="email" required><label for="f-email">Your email</label></div>
+          </div>
+          <div class="field"><input id="f-sub" name="subject" placeholder=" " required><label for="f-sub">Subject</label></div>
+          <div class="field"><textarea id="f-msg" name="message" rows="5" placeholder=" " required></textarea><label for="f-msg">Message</label></div>
+          <button class="btn btn-primary" type="submit" id="sendBtn">Send message <i class="bi bi-send"></i></button>
+          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <a href="index.html" class="logo"><span class="logo-mark">ON</span>Osanda Nimalarathna</a>
+      <div class="socials socials-sm">
+        <a href="https://www.linkedin.com/in/osandadeshan" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="https://github.com/osandadeshan" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+<a href="https://osandadeshan.medium.com" target="_blank" rel="noopener" aria-label="Medium"><i class="bi bi-medium"></i></a>
+<a href="https://stackoverflow.com/users/6397151/osanda-deshan" target="_blank" rel="noopener" aria-label="Stack Overflow"><i class="bi bi-stack-overflow"></i></a>
+<a href="https://twitter.com/osandadeshan" target="_blank" rel="noopener" aria-label="X / Twitter"><i class="bi bi-twitter-x"></i></a>
+<a href="https://www.facebook.com/osanda.nimalarathna" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+<a href="https://www.instagram.com/osanda.deshan" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+      <div class="foot-copy">
+        <p>© <span id="year">2026</span> Osanda Nimalarathna. All rights reserved.</p>
+        <p class="credit">Design inspired by <a href="https://htmlcodex.com" target="_blank" rel="noopener">HTML Codex</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="icon-btn to-top" id="toTop" type="button" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+  <script src="assets/js/site.js" defer></script>
 </body>
-
 </html>
