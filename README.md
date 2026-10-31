@@ -9,17 +9,7 @@
 * StackOverflow: https://stackoverflow.com/users/6397151/osanda-deshan
 
 #### Credits
-* Bootstrap: http://getbootstrap.com
-* jQuery: http://jquery.com
-* jQuery Easing: http://gsgd.co.uk/sandbox/jquery/easing
-* Modernizr: http://modernizr.com
-* Google Fonts: https://www.google.com/fonts
-* Google Map: http://maps.google.com
-* Icomoon: https://icomoon.io/app
-* Respond JS: https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT
-* animate.css: http://daneden.me/animate
-* jQuery Waypoint: https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
-* Stellar Parallax: http://markdalgleish.com/projects/stellar.js
-* jQuery countTo: http://www.owlcarousel.owlgraphic.com
-* EasyPieChart: https://github.com/rendro/easy-pie-chart
-* Demo Images: http://unsplash.com
+* Design inspired by HTML Codex: https://htmlcodex.com
+* Google Fonts (Inter, Space Grotesk, JetBrains Mono): https://fonts.google.com
+* Bootstrap Icons: https://icons.getbootstrap.com
+* Contact form: FormSubmit: https://formsubmit.co
