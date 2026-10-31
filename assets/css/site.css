@@ -455,3 +455,12 @@ details.t-item:hover .expand { color: var(--heading); }
 .skill-group .chips { gap: .4rem; }
 .cred-desc { color: var(--muted); font-size: .86rem; line-height: 1.55; margin: .55rem 0 0; }
 .cred .logo-box { flex-basis: 56px; height: 56px; }
+
+/* ---------- 404 page ---------- */
+.not-found { min-height: 100vh; display: grid; align-items: center; padding: 140px 0 80px; }
+@media (max-width: 600px) { .not-found .blob { width: 260px; height: 260px; } }
+.not-found .eyebrow { justify-content: center; }
+.not-found .detail-title, .not-found .hero-desc { margin-left: auto; margin-right: auto; }
+.not-found .hero-desc { max-width: 560px; }
+.not-found .hero-cta { justify-content: center; flex-wrap: wrap; }
+.nf-code { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(6rem, 22vw, 13rem); line-height: .9; letter-spacing: -.04em; margin-bottom: 1rem; }
