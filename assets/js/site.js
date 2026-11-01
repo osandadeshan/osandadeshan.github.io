@@ -58,7 +58,7 @@
   // Typewriter
   var typed = $('#typed');
   if (typed) {
-    var roles = ['Lead Software Engineer', 'Test Automation Architect', 'Quality Engineering Leader', 'RPA Solution Architect', 'Open-Source Creator'];
+    var roles = ['Lead Software Engineer', 'Quality Engineering Leader', 'Test Automation Architect', 'Performance Testing Specialist', 'AI-Driven Engineer', 'Open-Source Creator'];
     if (reduce) {
       typed.textContent = roles[0];
     } else {
@@ -195,21 +195,77 @@
   var stage = $('.g-stage');
   if (stage) {
     var slides = $$('img', stage), thumbs = $$('.g-thumbs button'), gi = 0;
+    var counter = $('.g-count'), lb = null;
     var show = function (i) {
       gi = (i + slides.length) % slides.length;
       slides.forEach(function (s, j) { s.classList.toggle('active', j === gi); });
       thumbs.forEach(function (t, j) { t.classList.toggle('active', j === gi); });
+      var label = (gi + 1) + ' / ' + slides.length;
+      if (counter) counter.textContent = label;
+      if (lb) { $('img', lb).src = slides[gi].currentSrc || slides[gi].src; $('.lb-count', lb).textContent = label; }
     };
+    // Full-screen viewer
+    var openLb = function () {
+      if (!lb) {
+        lb = document.createElement('div');
+        lb.className = 'lightbox';
+        lb.setAttribute('role', 'dialog');
+        lb.setAttribute('aria-modal', 'true');
+        lb.setAttribute('aria-label', 'Screenshot viewer');
+        lb.innerHTML = '<img alt=""><button class="icon-btn lb-close" type="button" aria-label="Close viewer"><i class="bi bi-x-lg"></i></button>' +
+          (slides.length > 1 ? '<button class="icon-btn lb-prev" type="button" aria-label="Previous screenshot"><i class="bi bi-chevron-left"></i></button><button class="icon-btn lb-next" type="button" aria-label="Next screenshot"><i class="bi bi-chevron-right"></i></button>' : '') +
+          '<span class="lb-count"></span>';
+        document.body.appendChild(lb);
+        lb.addEventListener('click', function (e) {
+          if (e.target.closest('.lb-prev')) show(gi - 1);
+          else if (e.target.closest('.lb-next')) show(gi + 1);
+          else if (e.target === lb || e.target.closest('.lb-close')) closeLb();
+        });
+      }
+      show(gi);
+      $('img', lb).alt = slides[gi].alt;
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      $('.lb-close', lb).focus();
+    };
+    var closeLb = function () {
+      if (!lb) return;
+      lb.classList.remove('open');
+      document.body.style.overflow = '';
+      var z = $('.g-zoom'); if (z) z.focus();
+    };
+    slides.forEach(function (s) { s.addEventListener('click', openLb); });
+    var zoom = $('.g-zoom');
+    if (zoom) zoom.addEventListener('click', openLb);
     thumbs.forEach(function (t, i) { t.addEventListener('click', function () { show(i); }); });
     var gp = $('.g-nav.prev'), gn = $('.g-nav.next');
     if (gp) gp.addEventListener('click', function () { show(gi - 1); });
     if (gn) gn.addEventListener('click', function () { show(gi + 1); });
     document.addEventListener('keydown', function (e) {
       if (e.target.closest('input, textarea')) return;
+      if (e.key === 'Escape') closeLb();
       if (e.key === 'ArrowLeft') show(gi - 1);
       if (e.key === 'ArrowRight') show(gi + 1);
     });
   }
+
+  // "Download resume (PDF)": print the page with the resume stylesheet
+  var printBtn = $('#printCv');
+  if (printBtn) {
+    printBtn.addEventListener('click', function () {
+      window.print();
+    });
+  }
+  var closedForPrint = [];
+  addEventListener('beforeprint', function () {
+    $$('.reveal').forEach(reveal);
+    closedForPrint = $$('details:not([open])');
+    closedForPrint.forEach(function (d) { d.open = true; });
+  });
+  addEventListener('afterprint', function () {
+    closedForPrint.forEach(function (d) { d.open = false; });
+    closedForPrint = [];
+  });
 
   // Contact form via FormSubmit (free, no backend required)
   var form = $('#contactForm');
@@ -226,7 +282,7 @@
       }
       btn.disabled = true;
       status.className = 'form-status';
-      status.textContent = 'Sending…';
+      status.textContent = 'Sending...';
       fetch(form.action, { method: 'POST', headers: { Accept: 'application/json' }, body: new FormData(form) })
         .then(function (r) { return r.json(); })
         .then(function (d) {
