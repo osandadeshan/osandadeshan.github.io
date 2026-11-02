@@ -76,13 +76,13 @@
 
   // Reveal on scroll, count-up numbers and skill bars
   function count(n) {
-    var target = +n.dataset.count, start = null;
-    if (reduce) { n.textContent = target + '+'; return; }
+    var target = +n.dataset.count, start = null, plus = 'exact' in n.dataset ? '' : '+';
+    if (reduce) { n.textContent = target + plus; return; }
     n.textContent = '0';
     requestAnimationFrame(function step(t) {
       if (!start) start = t;
       var p = Math.min((t - start) / 1600, 1);
-      n.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))) + (p === 1 ? '+' : '');
+      n.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))) + (p === 1 ? plus : '');
       if (p < 1) requestAnimationFrame(step);
     });
   }
@@ -250,12 +250,9 @@
   }
 
   // "Download resume (PDF)": print the page with the resume stylesheet
-  var printBtn = $('#printCv');
-  if (printBtn) {
-    printBtn.addEventListener('click', function () {
-      window.print();
-    });
-  }
+  $$('[data-print]').forEach(function (b) {
+    b.addEventListener('click', function () { window.print(); });
+  });
   var closedForPrint = [];
   addEventListener('beforeprint', function () {
     $$('.reveal').forEach(reveal);

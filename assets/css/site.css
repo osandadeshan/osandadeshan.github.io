@@ -628,3 +628,31 @@ details.t-item:hover .expand { color: var(--heading); }
 .repo-lang i { font-size: .55rem; color: var(--accent-2); }
 .repo .verify { position: absolute; top: 1.2rem; right: 1.1rem; color: var(--muted); font-size: .85rem; }
 @media print { .oss { display: none !important; } }
+
+/* ================= Selected impact ================= */
+.impact-card { padding: 1.6rem 1.6rem 1.5rem; position: relative; overflow: hidden; }
+.impact-card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 3px; background: var(--grad); opacity: .7; }
+.impact-card .ic { font-size: 1.5rem; color: var(--accent-2); display: block; margin-bottom: .8rem; }
+.impact-kicker { font-family: 'JetBrains Mono', monospace; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.impact-card h3 { font-size: 1.2rem; margin: .3rem 0 .5rem; }
+.impact-card p { color: var(--muted); font-size: .93rem; margin: 0; line-height: 1.6; }
+.principles { margin-top: 1.5rem; padding: 1.6rem 1.8rem; }
+.principles-title { font-size: 1.1rem; margin: 0 0 1rem; display: flex; align-items: center; gap: .5rem; }
+.principles-title i { color: var(--accent-2); }
+.principles-list { list-style: none; counter-reset: pr; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; }
+.principles-list li { counter-increment: pr; display: flex; flex-direction: column; gap: .3rem; font-size: .9rem; color: var(--muted); }
+.principles-list li::before { content: counter(pr, decimal-leading-zero); font-family: 'JetBrains Mono', monospace; font-size: .78rem; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.principles-list b { color: var(--heading); font-family: 'Space Grotesk', sans-serif; font-size: 1rem; }
+@media (max-width: 900px) { .principles-list { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .principles-list { grid-template-columns: 1fr; } }
+@media print {
+  #impact .impact-card { margin-bottom: 4pt; break-inside: avoid; }
+  #impact .impact-card .ic, #impact .impact-card::before, #impact .principles, .hero-cta [data-print] { display: none !important; }
+  #impact .impact-card h3 { font-size: 10.5pt; margin: 0; display: inline; }
+  #impact .impact-kicker { display: none; }
+  #impact .impact-card p { font-size: 9.5pt; display: inline; margin-left: 4pt; }
+}
+
+/* ================= Role impact headline ================= */
+.t-item .role-impact { margin: .55rem 0 0; font-size: .92rem; line-height: 1.5; color: var(--text); padding-left: .7rem; border-left: 2px solid var(--accent-1); }
+@media print { .t-item .role-impact { font-size: 9.5pt; border: 0; padding: 0; font-style: italic; } }
