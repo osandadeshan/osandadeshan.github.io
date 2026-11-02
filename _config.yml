@@ -1,0 +1,10 @@
+# GitHub Pages (Jekyll) build settings.
+# The site is plain static HTML; this file only keeps repository tooling and
+# AI-assistant docs from being published as pages on osandadeshan.github.io.
+exclude:
+  - README.md
+  - CLAUDE.md
+  - AGENTS.md
+  - docs/
+  - scripts/
+  - LICENSE
