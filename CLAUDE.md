@@ -25,6 +25,7 @@ Plain static HTML/CSS/JS. **No build step, no framework, no npm dependencies.**
 | `sitemap.xml`, `robots.txt` | SEO. Add every new page to `sitemap.xml` |
 | `scripts/check-site.sh` | Content + link checker (also runs as a Claude Code hook) |
 | `resume/resume.html` | Source of the ATS-friendly resume PDF (not published as a page) |
+| `scripts/build-covers.py` | Generates the project cover images in `assets/img/covers/` (sources in `covers/`, not published) |
 | `scripts/build-resume.sh` | Builds `assets/Osanda-Nimalarathna-Resume.pdf` from `resume/resume.html` with headless Chromium |
 
 External resources: Google Fonts (Inter, Space Grotesk, JetBrains Mono), Bootstrap Icons

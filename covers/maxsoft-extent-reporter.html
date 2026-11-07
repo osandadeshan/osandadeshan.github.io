@@ -1,0 +1,115 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>MaxSoft Extent Reporter cover</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=block" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1280px;height:800px;overflow:hidden}
+body{background:#07080F;color:#E7E9F5;font-family:Inter,Arial,sans-serif;position:relative}
+.bg{position:absolute;inset:0;
+ background:
+  radial-gradient(620px 420px at 88% 18%,rgba(139,92,246,.38),transparent 70%),
+  radial-gradient(560px 420px at 70% 100%,rgba(34,211,238,.26),transparent 70%),
+  radial-gradient(500px 380px at 0% 0%,rgba(139,92,246,.18),transparent 70%),
+  linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px) 0 0/40px 40px,
+  linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px) 0 0/40px 40px,#07080F}
+.wrap{position:relative;display:grid;grid-template-columns:470px 1fr;gap:44px;height:100%;padding:70px 64px;align-items:center}
+.kind{font:600 17px 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#22D3EE;display:flex;align-items:center;gap:12px;margin-bottom:26px}
+.kind .ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-size:26px;color:#fff;background:linear-gradient(135deg,#8B5CF6,#22D3EE);box-shadow:0 10px 30px rgba(139,92,246,.45)}
+h1{font:700 58px/1.04 'Space Grotesk',sans-serif;letter-spacing:-.02em;color:#fff;margin-bottom:22px}
+h1 .g{background:linear-gradient(90deg,#A78BFA,#22D3EE);-webkit-background-clip:text;background-clip:text;color:transparent}
+.val{font-size:23px;line-height:1.45;color:#B4B9D3;margin-bottom:30px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{font:500 16px 'JetBrains Mono',monospace;padding:8px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);color:#D7DAEE}
+.right{display:flex;flex-direction:column;gap:18px;justify-content:center;position:relative}
+.win{background:rgba(16,18,32,.88);border:1px solid rgba(255,255,255,.12);border-radius:18px;box-shadow:0 30px 70px rgba(0,0,0,.55);overflow:hidden}
+.win.shift{margin-left:70px;margin-top:-6px}
+.bar{display:flex;align-items:center;gap:7px;padding:12px 16px;background:rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.08)}
+.bar i{width:11px;height:11px;border-radius:50%;background:#EF4444;display:inline-block}
+.bar i:nth-child(2){background:#F59E0B}.bar i:nth-child(3){background:#22C55E}
+.bar span{margin-left:10px;font:500 14px 'JetBrains Mono',monospace;color:#9CA3C7}
+.wb{padding:18px 20px}
+.mono{font:15.5px/1.75 'JetBrains Mono',monospace;color:#D7DAEE}
+.mono.big{font-size:19px;line-height:1.9}
+.mono .h{color:#A78BFA;font-weight:600}.mono .k{color:#22D3EE}.mono .s{color:#FCD34D}.mono .c{color:#6B7194}.mono .f{color:#4ADE80}
+.row{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.08);font-size:16px;color:#D7DAEE}
+.row:last-of-type{border-bottom:0}
+.badge{font:700 12.5px 'JetBrains Mono',monospace;padding:4px 10px;border-radius:7px;letter-spacing:.05em}
+.badge.ok{background:rgba(34,197,94,.16);color:#4ADE80}.badge.bad{background:rgba(239,68,68,.16);color:#F87171}
+.sum{margin-top:12px;display:flex;gap:16px;font:14px 'JetBrains Mono',monospace;color:#9CA3C7;align-items:center}
+.sum .g{color:#4ADE80}.sum .r{color:#F87171}
+.live{display:flex;align-items:center;gap:10px;font:600 16px Inter;color:#fff;margin-bottom:14px}
+.live span{margin-left:auto;font:400 13px 'JetBrains Mono',monospace;color:#9CA3C7}
+.hg{display:grid;grid-template-columns:1fr 70px 70px 70px;align-items:center;padding:8px 0;font:600 13px 'JetBrains Mono',monospace;color:#8B90B3;letter-spacing:.06em}
+.hg.r{font:500 16px Inter;color:#D7DAEE;letter-spacing:0;border-top:1px solid rgba(255,255,255,.07)}
+.hg span:not(:first-child){text-align:center}
+.dot{width:14px;height:14px;border-radius:50%;display:block;margin:auto}
+.dot.ok{background:#22C55E;box-shadow:0 0 12px rgba(34,197,94,.7)}.dot.down{background:#EF4444;box-shadow:0 0 12px rgba(239,68,68,.8)}.dot.warn{background:#F59E0B;box-shadow:0 0 12px rgba(245,158,11,.7)}
+.live .dot{margin:0}
+.split{display:flex;gap:26px;align-items:center}
+.donut{flex:0 0 170px;height:170px;border-radius:50%;display:grid;place-items:center}
+.donut>div{width:112px;height:112px;border-radius:50%;background:#101220;display:grid;place-items:center;align-content:center;font:700 30px 'Space Grotesk';color:#fff;text-align:center}
+.donut small{display:block;font:500 12px 'JetBrains Mono',monospace;color:#9CA3C7;margin-top:2px}
+.bars{flex:1;display:flex;flex-direction:column;gap:13px}
+.hb{display:grid;grid-template-columns:1fr 46px;gap:4px 10px;font-size:15px;color:#D7DAEE}
+.hb .track{grid-column:1;height:10px;border-radius:6px;background:rgba(255,255,255,.07);overflow:hidden}
+.hb .fill{height:100%;border-radius:6px;background:linear-gradient(90deg,#8B5CF6,#22D3EE)}
+.hb b{grid-row:1/3;grid-column:2;align-self:center;font:700 16px 'JetBrains Mono';color:#fff;text-align:right}
+.list{flex:1}
+.shot{margin-top:14px;display:flex;gap:10px;align-items:center;padding:12px 14px;border-radius:12px;background:rgba(239,68,68,.08);border:1px dashed rgba(239,68,68,.4);color:#FCA5A5;font-size:15px}
+.icons{display:flex;gap:14px}
+.ico{flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;padding:18px 8px;border-radius:16px;background:rgba(16,18,32,.85);border:1px solid rgba(255,255,255,.1);font-size:15px;color:#D7DAEE}
+.ico i{font-size:38px;background:linear-gradient(135deg,#A78BFA,#22D3EE);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ico.sm{padding:12px 8px}.ico.sm i{font-size:26px}
+.checks{display:flex;gap:22px;font-size:17px;color:#4ADE80}
+.mail{display:flex;flex-direction:column;gap:8px;font-size:15.5px;color:#D7DAEE;padding-bottom:16px;margin-bottom:18px;border-bottom:1px solid rgba(255,255,255,.08)}
+.mail b{display:inline-block;width:76px;color:#8B90B3;font:600 13px 'JetBrains Mono',monospace;letter-spacing:.06em;text-transform:uppercase}
+.stats{flex:1;display:grid;gap:12px}
+.stat{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-radius:12px;background:rgba(255,255,255,.05)}
+.stat b{font:700 24px 'Space Grotesk'}.stat span{color:#9CA3C7;font-size:15px}
+.stat.g b{color:#4ADE80}.stat.r b{color:#F87171}.stat.y b{color:#FCD34D}
+.pub{display:flex;flex-direction:column;gap:14px}
+.pubh{font:700 22px 'Space Grotesk';color:#fff;display:flex;gap:12px;align-items:center;margin-bottom:4px}
+.pubh i{font-size:28px;color:#fff}
+.art{display:flex;gap:16px;align-items:center;padding:18px 20px;border-radius:16px;background:rgba(16,18,32,.88);border:1px solid rgba(255,255,255,.1);box-shadow:0 16px 40px rgba(0,0,0,.4)}
+.art:nth-child(odd){margin-left:40px}
+.art>i{flex:0 0 52px;height:52px;border-radius:14px;display:grid;place-items:center;font-size:24px;color:#fff;background:linear-gradient(135deg,#8B5CF6,#22D3EE)}
+.art b{display:block;font:600 18px Inter;color:#fff}.art span{font-size:14px;color:#9CA3C7}
+.duo{display:flex;align-items:center;gap:30px;justify-content:center}
+.phone{flex:0 0 250px;height:500px;border-radius:40px;padding:14px;background:#151827;border:2px solid rgba(255,255,255,.14);box-shadow:0 30px 70px rgba(0,0,0,.6);position:relative}
+.notch{position:absolute;top:14px;left:50%;transform:translateX(-50%);width:90px;height:20px;border-radius:0 0 14px 14px;background:#151827;z-index:2}
+.scr{height:100%;border-radius:28px;background:linear-gradient(180deg,#1B1F35,#0E1020);padding:44px 16px 16px;display:flex;flex-direction:column;gap:14px;overflow:hidden}
+.paper{position:relative;background:#F4F1E8;border-radius:10px;padding:20px 16px;display:flex;flex-direction:column;gap:12px;height:290px}
+.paper .tl{height:9px;border-radius:4px;background:#3B3B4F;opacity:.75}
+.scan{position:absolute;inset:-6px;border:3px solid #22D3EE;border-radius:12px;box-shadow:0 0 24px rgba(34,211,238,.6)}
+.cam{margin-top:auto;text-align:center;font:600 14px 'JetBrains Mono';color:#22D3EE}
+.voice{display:flex;flex-direction:column;align-items:center;gap:16px;color:#fff}
+.voice>i{font-size:56px;color:#22D3EE}
+.waves{display:flex;gap:7px;align-items:center;height:70px}
+.waves i{width:9px;border-radius:5px;background:linear-gradient(180deg,#A78BFA,#22D3EE)}
+.voice span{font:600 17px 'JetBrains Mono';color:#B4B9D3}
+.minis{display:flex;gap:14px}
+.mini{flex:1;background:rgba(16,18,32,.88);border:1px solid rgba(255,255,255,.12);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding-bottom:14px}
+.mini .bar{width:100%}.mini .bar span{margin-left:6px;font-size:13px}
+.prog{margin:0 14px;width:calc(100% - 28px);height:8px;border-radius:5px;background:rgba(255,255,255,.08)}
+.prog div{height:100%;border-radius:5px;background:linear-gradient(90deg,#8B5CF6,#22D3EE)}
+.mini .badge{margin-left:14px}
+.flow{display:flex;align-items:center;gap:14px}
+.win.half{flex:1}
+.win.half .row{font-size:14.5px}
+.arrow{display:flex;flex-direction:column;align-items:center;gap:6px;color:#22D3EE;font:600 12px 'JetBrains Mono';text-align:center;width:74px}
+.arrow i{font-size:34px}
+.arrow.v{width:auto}
+.photo{background:#2A2F4A;border-radius:12px;padding:22px 16px;display:flex;flex-direction:column;gap:12px;height:280px;position:relative}
+.photo>i{font-size:30px;color:#8B90B3;margin-bottom:8px}
+.photo .tl{height:9px;border-radius:4px;background:#8B90B3;opacity:.6}
+.txt{flex:0 0 270px;background:rgba(16,18,32,.9);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:22px;box-shadow:0 30px 70px rgba(0,0,0,.5)}
+.txth{font:600 14px 'JetBrains Mono';color:#22D3EE;margin-bottom:12px}
+.txt p{font-size:18px;line-height:1.55;color:#fff;margin-bottom:18px}
+.btns{display:flex;gap:10px}.btns span{padding:8px 14px;border-radius:10px;background:rgba(139,92,246,.2);color:#C4B5FD;font-size:14px}
+.term div{white-space:nowrap}.term .p{color:#22D3EE}.term .dim{color:#6B7194}.term .g{color:#4ADE80}
+.json{font-size:17px}
+</style></head><body><div class="bg"></div>
+<div class="wrap"><div class="left">
+<div class="kind"><span class="ic"><i class="bi bi-file-earmark-bar-graph"></i></span>Publication</div>
+<h1>MaxSoft Extent <span class="g">Reporter</span></h1><p class="val">Rich HTML test reports for any TestNG framework, with zero reporting code.</p><div class="chips"><span>Java</span><span>TestNG</span><span>Extent Reports</span></div></div>
+<div class="right"><div class="win wide"><div class="bar"><i></i><i></i><i></i><span>Extent Report</span></div><div class="wb"><div class="split"><div class="donut" style="background:conic-gradient(#22C55E 0 88%,#EF4444 88% 96%,#F59E0B 96% 100%)"><div>88%<small>passed</small></div></div><div class="list"><div class="row"><span>Login with valid user</span><b class="badge ok">PASS</b></div><div class="row"><span>Search product</span><b class="badge ok">PASS</b></div><div class="row"><span>Checkout with card</span><b class="badge bad">FAIL</b></div><div class="row"><span>Update profile</span><b class="badge ok">PASS</b></div></div></div><div class="shot"><i class="bi bi-image"></i><span>Failure screenshot attached</span></div></div></div></div></div></body></html>

@@ -44,6 +44,15 @@ Always define colours through tokens so both themes work. Test both themes.
 | `.quote` + `.q-hl` | Testimonial with bold pull-quote headline |
 | Detail page: `.detail-hero-grid`, `.hero-cover`, `.browser`, `.browser-bar`, `.hero-facts`, `.gallery`, `.g-count`, `.g-zoom`, `.lightbox`, `.adv-list`, `.side-stack`, `.cta-card`, `.pager` | Project page layout |
 
+## Project covers
+
+Every project/publication has a generated cover at `assets/img/covers/<slug>.jpg` (1280x800,
+16:10) built by `scripts/build-covers.py`: dark grid background with violet/cyan glows, kind
+eyebrow with a gradient icon tile, Space Grotesk name with the last word in the gradient, a
+one-line value statement, tech chips, and a stylised mock of what the project does on the right.
+Covers are used for cards, detail heroes, pager thumbnails and social previews; galleries keep
+real screenshots.
+
 ## Responsive and accessibility
 
 - Breakpoints: 1040px (3→2 columns), 900px (single column layouts), 600px (mobile).
