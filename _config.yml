@@ -7,4 +7,5 @@ exclude:
   - AGENTS.md
   - docs/
   - scripts/
+  - resume/
   - LICENSE

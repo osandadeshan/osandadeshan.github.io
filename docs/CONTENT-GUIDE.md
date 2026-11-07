@@ -19,15 +19,26 @@ Update this file whenever a fact changes.
 **Career** (newest first)
 | Dates | Role | Company | Notes |
 |---|---|---|---|
-| Feb 2025 – present | Lead Software Engineer | GovTech Singapore, via Virtusa · One-North | TradeNet (National Single Window). Test automation (Playwright, Cucumber, Spring Boot, Kotlin), performance testing with k6, quality governance, AI-assisted engineering with Claude, GitHub Copilot and Gemini |
-| Aug 2022 – Feb 2025 | Lead Automation Engineer | Activate Interactive · Paya Lebar, SG | SHARE, MPA, SGSecure 2.0, CRISP. Led QE across 4 SG Government services at Activate (5 career-wide including TradeNet at GovTech; use 5 in career totals, 4 only inside the Activate role); Playwright, Appium, Gatling; trained QE engineers |
+| Feb 2025 – present | Lead Software Engineer | GovTech Singapore, via Virtusa · Punggol Digital District | TradeNet (National Single Window). Test automation (Playwright, Cucumber, Spring Boot, Kotlin), performance testing with k6, quality governance, AI-assisted engineering with Claude, GitHub Copilot and Gemini |
+| Aug 2022 – Feb 2025 | Lead Automation Engineer | Activate Interactive · Paya Lebar, SG | SHARE, MPA, SGSecure 2.0, SGWorkPass, CRISP. Led QE across 5 SG Government services at Activate (6 career-wide including TradeNet at GovTech; use 6 in career totals, 5 only inside the Activate role); Playwright, Appium, Gatling; trained QE engineers |
 | Jun 2019 – Aug 2022 | Senior SQE → Associate Technical Specialist → Technical Specialist | Wiley Global Technology · Sri Lanka | Promoted twice in 3 years. Author Services platform |
 | Nov 2018 – May 2019 | Senior Software Quality Engineer | CingleVue International · Sri Lanka | Virtuoso e-learning; Robot Framework |
 | Aug 2017 – Oct 2018 | Software Quality Engineer | Pearson Lanka · Sri Lanka | Pearson Prep; Gauge + Appium mobile framework; IntelliAPI adopted by Pearson Mobile team |
 | Aug 2016 – Jul 2017 | Intern SE → Associate SQE | Mitra Innovation · Sri Lanka | Promoted to a full-time role in 5 months |
 
+**Extra role facts from Osanda's earlier site (OK to use, used in the resume PDF):**
+Wiley: CI for the regression suites; trained QE members on web/API automation and on API
+development with Node.js and Express; JavaScript initiatives. CingleVue: CI with Jenkins,
+Confluence docs, customer aftercare support. Pearson: behaviour-driven automation, mobile and
+API performance testing with JMeter, accessibility testing, trained QE members on BDD
+automation for web, mobile and API. Mitra: BDD automation of client websites, JMeter
+performance assessment, CI; as intern, built a web system for an Australian hospital
+(ASP.NET, WebAPI, MVC, Angular, Azure) and web test automation with Gauge and Selenium.
+
 **Education:** BSc (Special) Computer Science & Technology, Uva Wellassa University (2013–2017).
-Final-year research: MySight.
+Final-year research: MySight, published in the University of Kelaniya repository in 2016.
+Publication: "eye4U: An Effective Mobile Based Solution for the Visually Impaired",
+IRSUWU 2017 (International Research Symposium of Uva Wellassa University); no link yet.
 
 **Certifications (14):** ISTQB CTFL (Jun 2017) · SAFe 5 Agile Software Engineer (Feb 2021) ·
 Gremlin Chaos Engineering Practitioner (Jun 2021) · SAFe 5 Agilist (Jul 2020) ·
@@ -62,7 +73,7 @@ Wickramasinghe, Pulani Ranasinghe, Isuru Binduhewa, Harsharn Wijewardana.
 - Prefer real tool names (GitHub Copilot, not "Co-Pilot"; k6, Playwright).
 - Plain English only; see the character rules in CLAUDE.md.
 - **Impact-driven bullets:** lead with the outcome, then how. Pattern: "[Outcome] by [action]"
-  or "[Outcome]: [what I did]". Use scale the reader recognises (national platform, 5
+  or "[Outcome]: [what I did]". Use scale the reader recognises (national platform, 6
   government services, adopted by another team). Never add numbers that are not in the
   facts sheet.
 

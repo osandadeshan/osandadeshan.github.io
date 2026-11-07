@@ -24,6 +24,8 @@ Plain static HTML/CSS/JS. **No build step, no framework, no npm dependencies.**
 | `assets/img/` | Images. `publications/` and `projects/` hold card and gallery screenshots |
 | `sitemap.xml`, `robots.txt` | SEO. Add every new page to `sitemap.xml` |
 | `scripts/check-site.sh` | Content + link checker (also runs as a Claude Code hook) |
+| `resume/resume.html` | Source of the ATS-friendly resume PDF (not published as a page) |
+| `scripts/build-resume.sh` | Builds `assets/Osanda-Nimalarathna-Resume.pdf` from `resume/resume.html` with headless Chromium |
 
 External resources: Google Fonts (Inter, Space Grotesk, JetBrains Mono), Bootstrap Icons
 1.11.3 from jsDelivr, FormSubmit for the contact form (`osanda.deshan@gmail.com`).
@@ -31,8 +33,10 @@ External resources: Google Fonts (Inter, Space Grotesk, JetBrains Mono), Bootstr
 ## Hard rules
 
 1. **English only.** No accented letters (write "resume", never "résumé"), no arrows (`→`),
-   no curly quotes or ellipsis characters in site text. Allowed punctuation: em/en dash `—`,
-   middle dot `·`, `©`, `®`. Run `scripts/check-site.sh` before finishing.
+   no curly quotes or ellipsis characters in site text. **No em or en dashes (`—`, `–`) in site prose:**
+   they read as AI-written. Use a comma, colon, full stop or "to" instead; date ranges use a
+   spaced hyphen ("Feb 2025 - Present"). Only verbatim testimonials keep their dashes.
+   Allowed: middle dot `·`, `©`, `®`. Run `scripts/check-site.sh` before finishing.
 2. **Never invent facts.** No made-up metrics, employers, dates, tools, star counts or
    testimonials. Use only what is in `docs/CONTENT-GUIDE.md`, the existing site, or what
    Osanda states. If a claim needs a number you do not have, ask or flag it.
@@ -54,10 +58,20 @@ scripts/check-site.sh                 # characters + broken local links; must pr
 python3 -m http.server 8765           # then open http://localhost:8765
 ```
 
-Check desktop (1440px) and mobile (390px), dark and light theme, and the print view
-("Download resume (PDF)" button) if the home page content changed. Reveal animations
+Check desktop (1440px) and mobile (390px), dark and light theme, and the browser print view
+if the home page content changed. Reveal animations
 hide content until scrolled into view — when screenshotting headlessly, add class `in`
 to every `.reveal` element first.
+
+**Resume PDF:** the "Resume (PDF)" buttons download `assets/Osanda-Nimalarathna-Resume.pdf`.
+When career facts, skills, projects or credentials change, update `resume/resume.html` too,
+then run `scripts/build-resume.sh` and commit the regenerated PDF. Keep it ATS-friendly (online ATS checkers mark down anything else): **one column**, no
+grids/columns, tables, images, icons or positioned elements; Arial; plain ASCII punctuation;
+standard headings (Summary, Skills, Work Experience, Projects, Certifications, Awards,
+Education); each job as a title/dates row, a company/location row, context, outcome-first bullets
+and a Tools line; at most 3 pages; every project, publication, certification and award linked to its page. After
+building, check the text order with
+`python3 -c "import pypdf;print(pypdf.PdfReader('assets/Osanda-Nimalarathna-Resume.pdf').pages[0].extract_text()[:300])"`.
 
 `gh` is not installed on this machine; after pushing a branch give the user the compare
 link: `https://github.com/osandadeshan/osandadeshan.github.io/compare/master...<branch>?expand=1`
