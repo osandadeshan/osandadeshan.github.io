@@ -39,7 +39,7 @@ Always define colours through tokens so both themes work. Test both themes.
 | `.project` | Project card (`data-cat="pub"` or `"proj"` for the filter) |
 | `.repo` | Open-source starter kit card |
 | `.impact-card`, `.impact-kicker`, `.principles`, `.principles-list` | Selected impact cards and the "How I lead quality" principles row |
-| `[data-print]` | Any button with this attribute prints the resume |
+| `[data-print]` | Any button with this attribute opens the browser print view (resume buttons now link to the ATS PDF instead) |
 | `.cred` (`.award`) | Certification / award card with optional `.verify` icon |
 | `.quote` + `.q-hl` | Testimonial with bold pull-quote headline |
 | Detail page: `.detail-hero-grid`, `.hero-cover`, `.browser`, `.browser-bar`, `.hero-facts`, `.gallery`, `.g-count`, `.g-zoom`, `.lightbox`, `.adv-list`, `.side-stack`, `.cta-card`, `.pager` | Project page layout |
