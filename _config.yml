@@ -8,4 +8,5 @@ exclude:
   - docs/
   - scripts/
   - resume/
+  - covers/
   - LICENSE
