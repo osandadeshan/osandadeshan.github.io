@@ -21,10 +21,11 @@ Plain static HTML/CSS/JS. **No build step, no framework, no npm dependencies.**
 | `404.html` | Themed not-found page |
 | `assets/css/site.css` | All styles (one file). Dark theme default, light theme via `[data-theme="light"]`; print stylesheet at the end turns the home page into a resume |
 | `assets/js/site.js` | All behaviour (one IIFE): theme toggle, menu, typewriter, reveal-on-scroll, tabs, project filter, testimonial slider, detail gallery + lightbox, print, contact form |
-| `assets/img/` | Images. `publications/` and `projects/` hold card and gallery screenshots |
+| `assets/img/` | Images. `covers/` holds the project covers, `gallery/` the real detail-page screenshots (`<slug>-<n>.jpg`, 1920x1200) |
 | `sitemap.xml`, `robots.txt` | SEO. Add every new page to `sitemap.xml` |
 | `scripts/check-site.sh` | Content + link checker (also runs as a Claude Code hook) |
 | `resume/resume.html` | Source of the ATS-friendly resume PDF (not published as a page) |
+| `scripts/build-covers.py` | Generates the project cover images in `assets/img/covers/` (sources in `covers/`, not published) |
 | `scripts/build-resume.sh` | Builds `assets/Osanda-Nimalarathna-Resume.pdf` from `resume/resume.html` with headless Chromium |
 
 External resources: Google Fonts (Inter, Space Grotesk, JetBrains Mono), Bootstrap Icons

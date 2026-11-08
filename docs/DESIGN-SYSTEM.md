@@ -44,6 +44,26 @@ Always define colours through tokens so both themes work. Test both themes.
 | `.quote` + `.q-hl` | Testimonial with bold pull-quote headline |
 | Detail page: `.detail-hero-grid`, `.hero-cover`, `.browser`, `.browser-bar`, `.hero-facts`, `.gallery`, `.g-count`, `.g-zoom`, `.lightbox`, `.adv-list`, `.side-stack`, `.cta-card`, `.pager` | Project page layout |
 
+## Project covers
+
+Every project/publication has a generated cover at `assets/img/covers/<slug>.jpg` (1280x800,
+16:10) built by `scripts/build-covers.py`: dark grid background with violet/cyan glows, kind
+eyebrow with a gradient icon tile, Space Grotesk name with the last word in the gradient, a
+one-line value statement, tech chips, and a stylised mock of what the project does on the right.
+Covers are used for cards, detail heroes, pager thumbnails and social previews.
+
+Detail-page galleries span the full container width (project information sits below as a
+row) and use `assets/img/gallery/<slug>-<n>.jpg` at 1920x1200 (16:10), in the same style as the
+covers: dark grid backdrop with violet/cyan glows, a numbered gradient tile, a mono kicker
+("In action", "The result", "Setup", "Architecture") and a one-line Space Grotesk heading, then one
+panel. Panels are a browser window around a real page re-rendered at 2x (dashboard, Gauge report,
+email from GReporter's own template, Medium article), a phone frame around real app screenshots,
+an editor view of real repo files, or a diagram. Never enlarge a screenshot beyond its pixels.
+Body text must stay readable at full size (roughly 14px or more in the 1920px image): when the
+only screenshot is low resolution, rebuild the screen in HTML from its exact data (as done for the
+Excel and Extent reports) instead of shrinking it, and split a long page across two images.
+Order: the product in action first, then the result, then setup and architecture.
+
 ## Responsive and accessibility
 
 - Breakpoints: 1040px (3→2 columns), 900px (single column layouts), 600px (mobile).
