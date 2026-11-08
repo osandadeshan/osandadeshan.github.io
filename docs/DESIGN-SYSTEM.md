@@ -59,6 +59,9 @@ covers: dark grid backdrop with violet/cyan glows, a numbered gradient tile, a m
 panel. Panels are a browser window around a real page re-rendered at 2x (dashboard, Gauge report,
 email from GReporter's own template, Medium article), a phone frame around real app screenshots,
 an editor view of real repo files, or a diagram. Never enlarge a screenshot beyond its pixels.
+Body text must stay readable at full size (roughly 14px or more in the 1920px image): when the
+only screenshot is low resolution, rebuild the screen in HTML from its exact data (as done for the
+Excel and Extent reports) instead of shrinking it, and split a long page across two images.
 Order: the product in action first, then the result, then setup and architecture.
 
 ## Responsive and accessibility
