@@ -398,10 +398,10 @@ details.t-item:hover .expand { color: var(--heading); }
 .back-link:hover { color: var(--heading); gap: .75rem; }
 .tag-pill { display: table; padding: .3rem .9rem; border-radius: 999px; font-size: .78rem; font-weight: 600; background: color-mix(in srgb, var(--accent-1) 18%, transparent); color: var(--accent-2); border: 1px solid color-mix(in srgb, var(--accent-1) 35%, transparent); margin-bottom: 1rem; }
 .detail-title { font-size: clamp(2.2rem, 5vw, 3.8rem); max-width: 900px; letter-spacing: -.02em; }
-.detail-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 1.5rem; align-items: start; }
+.detail-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; align-items: start; }
 .gallery { padding: 12px; }
 .g-stage { position: relative; display: grid; border-radius: 12px; overflow: hidden; background: var(--bg-alt); }
-.g-stage img { grid-area: 1/1; width: 100%; max-height: 560px; object-fit: contain; opacity: 0; transition: opacity .5s var(--ease); }
+.g-stage img { grid-area: 1/1; width: 100%; height: auto; aspect-ratio: 16 / 10; max-height: 78vh; object-fit: contain; opacity: 0; transition: opacity .5s var(--ease); }
 .g-stage img.active { opacity: 1; }
 .g-nav { position: absolute; top: 50%; transform: translateY(-50%); background: var(--nav-bg); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
 .g-nav.prev { left: 12px; } .g-nav.next { right: 12px; }
@@ -410,7 +410,8 @@ details.t-item:hover .expand { color: var(--heading); }
 .g-thumbs button { flex: 0 0 78px; height: 54px; padding: 0; border-radius: 8px; overflow: hidden; border: 2px solid transparent; background: var(--bg-alt); cursor: pointer; opacity: .55; transition: all .3s; }
 .g-thumbs button.active, .g-thumbs button:hover { opacity: 1; border-color: var(--accent-1); }
 .g-thumbs img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
-.detail-info { padding: 1.8rem; position: sticky; top: 110px; }
+.detail-info { padding: 1.8rem; }
+.detail-info .meta-list { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.1rem 1.5rem; }
 .h-sm { font-size: 1.15rem; margin-bottom: 1.2rem; }
 .meta-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 1.1rem; }
 .meta-list li { display: flex; gap: .9rem; align-items: flex-start; font-size: .93rem; color: var(--heading); }

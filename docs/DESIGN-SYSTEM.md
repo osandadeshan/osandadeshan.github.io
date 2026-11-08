@@ -50,8 +50,16 @@ Every project/publication has a generated cover at `assets/img/covers/<slug>.jpg
 16:10) built by `scripts/build-covers.py`: dark grid background with violet/cyan glows, kind
 eyebrow with a gradient icon tile, Space Grotesk name with the last word in the gradient, a
 one-line value statement, tech chips, and a stylised mock of what the project does on the right.
-Covers are used for cards, detail heroes, pager thumbnails and social previews; galleries keep
-real screenshots.
+Covers are used for cards, detail heroes, pager thumbnails and social previews.
+
+Detail-page galleries span the full container width (project information sits below as a
+row) and use `assets/img/gallery/<slug>-<n>.jpg` at 1920x1200 (16:10), in the same style as the
+covers: dark grid backdrop with violet/cyan glows, a numbered gradient tile, a mono kicker
+("In action", "The result", "Setup", "Architecture") and a one-line Space Grotesk heading, then one
+panel. Panels are a browser window around a real page re-rendered at 2x (dashboard, Gauge report,
+email from GReporter's own template, Medium article), a phone frame around real app screenshots,
+an editor view of real repo files, or a diagram. Never enlarge a screenshot beyond its pixels.
+Order: the product in action first, then the result, then setup and architecture.
 
 ## Responsive and accessibility
 

@@ -1,8 +1,11 @@
 # Adding a project or publication
 
-1. **Images.** Put screenshots in `assets/img/publications/` (publications) or
-   `assets/img/projects/` (projects). Keep them at most 1400px wide and under ~250 KB
-   (`sips -s format jpeg -s formatOptions 78 -Z 1400 in.jpg --out out.jpg` on macOS).
+1. **Gallery images.** Use only real images of the project: screenshots of the running app or
+   its reports, original screenshots from the repo README or Medium article, or the real source
+   and spec files. Never stretch: save each as `assets/img/gallery/<slug>-<n>.jpg` at 1920x1200
+   (16:10). Crop screenshots to the part that matters so text stays readable (capture web pages
+   at 2x), show phone screenshots upright in a device frame, keep files under ~400 KB, and put the
+   product in action first. Blur anything internal to an employer (hostnames, credentials).
 2. **Cover image.** Add an entry to `PROJECTS` in `scripts/build-covers.py` (name, value line
    from the card text, tech chips from "Built with", a mock that shows what the project does) and
    run `python3 scripts/build-covers.py <slug>`. It writes `assets/img/covers/<slug>.jpg`
