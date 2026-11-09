@@ -40,8 +40,9 @@ Final-year research: MySight, published in the University of Kelaniya repository
 Publication: "eye4U: An Effective Mobile Based Solution for the Visually Impaired",
 IRSUWU 2017 (International Research Symposium of Uva Wellassa University); no link yet.
 
-**Certifications (14):** ISTQB CTFL (Jun 2017) · SAFe 5 Agile Software Engineer (Feb 2021) ·
-Gremlin Chaos Engineering Practitioner (Jun 2021) · SAFe 5 Agilist (Jul 2020) ·
+**Certifications (17):** ISTQB CTFL (Jun 2017) · SAFe 5 Agile Software Engineer (Feb 2021) ·
+Gremlin Chaos Engineering Practitioner (Jun 2021) · Anthropic: Claude Code 101 (May 2026),
+Claude 101 (Apr 2026), Introduction to Claude Cowork (May 2026), verified on verify.skilljar.com · SAFe 5 Agilist (Jul 2020) ·
 Automation Anywhere RPA Solution Architect (Aug 2020) · ACCELQ Automation Expert and
 Engineer (Oct 2023) · AA Bot Developer A360, Enterprise 11, IQ Bot (Aug 2021), Secure Bot
 (Sep 2021) · HackerRank Java Basic (Aug 2021) · MongoDB Basics (Dec 2021), Cluster
