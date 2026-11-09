@@ -84,8 +84,8 @@ link: `https://github.com/osandadeshan/osandadeshan.github.io/compare/master...<
   roles at one company go in one entry with an `<ol class="ladder">` and a green
   `<span class="promo-badge">` starting with "Promoted" (see Wiley and Mitra entries).
   Move the `now` class and `open` attribute to the current role.
-- **Add a certification:** add a `.card.cred` in `#pane-certs`, ordered by relevance to QE
-  leadership (ISTQB/SAFe/Chaos first, basic courses last), and update the count in the tab
+- **Add a certification:** add a `.card.cred` in `#pane-certs`, in Osanda's chosen order
+  (Anthropic Claude first, then ACCELQ, Automation Anywhere, HackerRank, MongoDB, SAFe, Gremlin, ISTQB last), and update the count in the tab
   label and the stats tile.
 - **Update skills:** keep the "AI & intelligent automation" group first in Skills & journey
   and AI-assisted engineering first in the snapshot's Core stack.
