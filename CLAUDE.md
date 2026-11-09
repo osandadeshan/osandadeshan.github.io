@@ -17,7 +17,7 @@ Plain static HTML/CSS/JS. **No build step, no framework, no npm dependencies.**
 | Path | What it is |
 |---|---|
 | `index.html` | Single-page home: hero, stats, recruiter snapshot, about, skills & journey, services, projects, credentials, testimonials, contact |
-| `<project>.html` (12 files) | One detail page per project/publication; all share one template |
+| `<project>.html` (14 files) | One detail page per project/publication; all share one template |
 | `404.html` | Themed not-found page |
 | `assets/css/site.css` | All styles (one file). Dark theme default, light theme via `[data-theme="light"]`; print stylesheet at the end turns the home page into a resume |
 | `assets/js/site.js` | All behaviour (one IIFE): theme toggle, menu, typewriter, reveal-on-scroll, tabs, project filter, testimonial slider, detail gallery + lightbox, print, contact form |
@@ -46,7 +46,7 @@ External resources: Google Fonts (Inter, Space Grotesk, JetBrains Mono), Bootstr
 4. **Keep the existing template, colours and styling.** Extend `site.css` with new rules;
    reuse `.card`, `.chip`, `.btn`, `.eyebrow`, `.grad-text`, `.reveal` etc.
 5. **Detail pages are templated.** A structural change to one detail page must be applied
-   to all 12 (script it with Python and assert each replacement matched).
+   to all 14 (script it with Python and assert each replacement matched).
 6. **Git:** never commit to `master` directly; branch, commit, push, open a PR.
    **Do not add Claude as co-author or committer** — no `Co-Authored-By: Claude` trailer and
    no "Generated with Claude Code" line in PR bodies.

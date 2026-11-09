@@ -131,6 +131,28 @@ def m_mock():
           '&nbsp;&nbsp;<span class="s">"role"</span>: <span class="s">"QA Lead"</span>,<br>&nbsp;&nbsp;<span class="s">"active"</span>: <span class="k">true</span><br>}</div>')
     return win("Terminal", term) + win("GET /api/users/1   200 OK", js, "shift")
 
+def m_quiz():
+    rows = [("1", "Amaya Perera", 100), ("2", "Priya Raman", 80), ("3", "Daniel Silva", 80), ("4", "Kevin Fernando", 60)]
+    r = ''.join(f'<div class="lb"><em>{k}</em><span>{E(n)}</span><div class="track"><div class="fill" style="width:{v}%"></div></div><b>{v}%</b></div>' for k, n, v in rows)
+    top = '<div class="live"><i class="bi bi-trophy"></i> Results <span>Ranked by score, then time</span></div>'
+    q = ('<div class="qz"><div class="qh"><b>Question 5 of 10</b><span class="timer"><i class="bi bi-clock"></i> 20:00</span></div>'
+         '<div class="opt on"><i class="bi bi-check-square-fill"></i> Continuous integration testing</div>'
+         '<div class="opt"><i class="bi bi-square"></i> Testing only after coding is complete</div></div>')
+    return win("Quiz 1: Basic QA Concepts", top + r, "wide") + win("Private quiz link", q, "shift")
+
+def m_ratecast():
+    act = "40,70 80,68 120,84 160,90 200,76 240,78 280,104 320,104 360,86"
+    fc = "360,86 400,74 440,75 480,75 520,76 560,76 600,75"
+    band = "360,92 400,66 440,58 480,52 520,50 560,46 600,44 600,108 560,106 520,104 480,100 440,96 400,90 360,96"
+    svg = (f'<svg viewBox="0 0 640 140" class="chart"><polygon points="{band}" fill="rgba(139,92,246,.22)"/>'
+           f'<polyline points="{act}" fill="none" stroke="#22D3EE" stroke-width="3.5"/>'
+           f'<polyline points="{fc}" fill="none" stroke="#A78BFA" stroke-width="3.5" stroke-dasharray="8 7"/>'
+           '<line x1="360" y1="10" x2="360" y2="130" stroke="rgba(255,255,255,.3)" stroke-dasharray="3 5"/></svg>')
+    cards = ''.join(f'<div class="stat"><span>{E(n)}</span><b>{v}</b></div>' for n, v in
+                    [("Today, 1 SGD", "259.795"), ("Tomorrow", "259.561"), ("Month end", "259.516")])
+    leg = '<div class="sum"><b class="g">Actual (Wise)</b> <span>Forecast with 80% range</span></div>'
+    return win("RateCast · SGD to LKR", f'<div class="rc">{cards}</div>{svg}{leg}', "wide")
+
 PROJECTS = [
     # slug, kind, name, value line, chips, mock, icon
     ("maxsoft-intelliapi", "Publication", "MaxSoft IntelliAPI", "Codeless API and database testing in plain business language. Adopted by the Pearson Mobile team.", ["Java", "Gauge", "Rest Assured"], m_intelliapi, "plug"),
@@ -141,6 +163,8 @@ PROJECTS = [
     ("maxsoft-greporter", "Publication", "MaxSoft GReporter", "Visual test summaries emailed to stakeholders after every Gauge run.", ["Java", "Gauge", "JavaMail"], m_greporter, "envelope-paper"),
     ("test-automation-master", "Publication", "Test Automation Master", "Hands-on tutorials on web, mobile and API automation and DevOps.", ["Medium", "275+ followers"], m_tam, "journal-richtext"),
     ("mysight", "Publication", "MySight", "A new vision for the blind: point a phone at printed text and hear it read aloud.", ["Android", "OpenCV", "OCR", "Text-to-Speech"], m_mysight, "eye"),
+    ("quiz-portal", "Project", "Quiz Portal", "Timed quizzes with a private link per person and a ranked leaderboard.", ["Node.js", "Express", "PostgreSQL"], m_quiz, "ui-checks"),
+    ("ratecast", "Project", "RateCast", "SGD to LKR and USD rate forecasts that learn from their own misses.", ["Next.js", "TypeScript", "Postgres"], m_ratecast, "graph-up-arrow"),
     ("maxsoft-webbot", "Project", "MaxSoft WebBot", "Codeless web UI automation in plain language, with parallel runs.", ["Java", "Gauge", "Selenium"], m_webbot, "robot"),
     ("soapui-to-gauge", "Project", "SoapUI to Gauge Plugin", "Run SoapUI suites from Gauge with detailed HTML reports.", ["Java", "SoapUI", "Gauge"], m_soapui, "arrow-left-right"),
     ("text-extractor", "Project", "Text Extractor", "Turn any image into editable text in seconds.", ["Android", "Java", "OCR"], m_textextractor, "fonts"),
@@ -254,6 +278,18 @@ h1 .g{background:linear-gradient(90deg,#A78BFA,#22D3EE);-webkit-background-clip:
 .btns{display:flex;gap:10px}.btns span{padding:8px 14px;border-radius:10px;background:rgba(139,92,246,.2);color:#C4B5FD;font-size:14px}
 .term div{white-space:nowrap}.term .p{color:#22D3EE}.term .dim{color:#6B7194}.term .g{color:#4ADE80}
 .json{font-size:17px}
+.lb{display:grid;grid-template-columns:34px 170px 1fr 56px;gap:12px;align-items:center;padding:9px 0;border-top:1px solid rgba(255,255,255,.07);font-size:16px;color:#D7DAEE}
+.lb em{font:700 14px 'JetBrains Mono';font-style:normal;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:rgba(139,92,246,.22);color:#C4B5FD}
+.lb .track{height:10px;border-radius:6px;background:rgba(255,255,255,.07);overflow:hidden}.lb .fill{height:100%;border-radius:6px;background:linear-gradient(90deg,#8B5CF6,#22D3EE)}
+.lb b{font:700 15px 'JetBrains Mono';color:#fff;text-align:right}
+.live>i{color:#FCD34D}
+.qh{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:15px;color:#9CA3C7}
+.timer{font:700 15px 'JetBrains Mono';color:#fff;padding:5px 12px;border-radius:999px;background:rgba(255,255,255,.08)}
+.opt{display:flex;gap:10px;align-items:center;padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.1);font-size:15.5px;color:#D7DAEE;margin-top:8px}
+.opt.on{border-color:#8B5CF6;background:rgba(139,92,246,.16)}.opt.on i{color:#A78BFA}
+.rc{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px}
+.rc .stat{flex-direction:column;align-items:flex-start;gap:4px}.rc .stat b{font-size:28px;color:#fff}.rc .stat span{font:500 12.5px 'JetBrains Mono';text-transform:uppercase;letter-spacing:.06em}
+.chart{width:100%;height:auto;display:block}
 """
 
 TPL = """<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{name} cover</title>
